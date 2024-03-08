@@ -330,6 +330,22 @@ ul {
     display: flex;
     flex-direction: column;
 }
+/*-- Board-Animation --*/
+@keyframes example {
+    from {top: 3.5vw;}
+    to {top: 0vw;}
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.news-list,
+.events-list,
+.features-list,
+.guides-list {
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
 .pagination {
     display: flex;
     box-sizing: initial;
@@ -412,7 +428,7 @@ ul {
 .bg-sect {
     position: absolute;
     z-index: 0;
-    top: 23vw;
+    top: 20vw;
 }
 .bg-sect img {
     width: 90vw;
@@ -570,7 +586,9 @@ ul {
     width: 32.5vw;
 }
 .signin-signup-mobi img {
-    height: 29.5vw;
+    height: 30.25vw;
+    position: relative;
+    top: -0.5vw;
 }
 /*-- Board-Mobile --*/
 #title-news {
@@ -591,7 +609,7 @@ ul {
     }
     .header {
         all: unset;
-        height: 76vw;
+        height: 77.85vw;
     }
     .section-1 {
         flex-direction: column;
@@ -649,5 +667,29 @@ ul {
     }
     .carousel-cell-btn img {
         width: 10vw;
+    }
+}
+@media screen and (max-width: 550px) {
+    .recharge-btn-mobi img {
+        width: 42vw;
+    }
+    .signin-signup-mobi img {
+        height: 30vw;
+        top: 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    .signin-signup-mobi img {
+        height: 30.25vw;
+    }
+}
+@media screen and (max-width: 350px) {
+    .signin-signup-mobi img {
+        height: 31.25vw;
+    }
+}
+@media screen and (max-width: 250px) {
+    .signin-signup-mobi img {
+        height: 33.25vw;
     }
 }
