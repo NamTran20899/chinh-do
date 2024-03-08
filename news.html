@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/news.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Tin Tức</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <header class="header background">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <a href="#" class="logo button">
+                    <img src="./resources/img/logo-pc.png" alt="logo-pc" />
+                </a>
+                <ul>
+                    <li>
+                        <a href="index.html">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <a href="manual.html">Cẩm Nang</a>
+                    </li>
+                    <li>
+                        <a href="#">Sự Kiện</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Tin Tức</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar-mobile">
+                <a href="#" class="logo-mobile button">
+                    <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
+                </a>
+                <div class="mobile-btn">
+                    <a href="#" class="button">
+                        <img src="./resources/img/download-btn.png" alt="download-btn" />
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./resources/img/signup-btn.png" alt="signup-btn" />
+                    </a>
+                </div>
+                <a class="hamburger-btn" onclick="hamburgerBtn()">
+                    <img src="./resources/img/hamburger-btn.png" alt="hamburger-btn" />
+                </a>
+                <div class="hamburger-menu" id="hamburger">
+                    <ul>
+                        <li>
+                            <a href="#" class="">Đăng nhập/Đăng ký</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Cẩm nang</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Hướng dẫn tân thủ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Nạp thẻ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Báo lỗi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">1900 988961</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Banner -->
+            <div class="banner">
+                <a href="" class="qr-code">
+                    <img src="./resources/img/qr-code.png" alt="qr-code" />
+                </a>
+                <div class="banner-btn">
+                    <a href="" class="button">
+                        <img src="./resources/img/banner-btn-1.png" alt="signin-signup-btn" />
+                    </a>
+                    <a href="" class="button">
+                        <img src="./resources/img/banner-btn-2.png" alt="recharge-card" />
+                    </a>
+                </div>
+                <a href="" class="block-18">
+                    <img src="./resources/img/18+.png" alt="18+" />
+                </a>
+            </div>
+            <!-- Banner-Mobile -->
+            <div class="banner-mobi-carousel">
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+            </div>
+        </header>
+
+        <div class="main-container background">
+            <!-- Sidenav -->
+            <div class="side-nav background" id="Sidenav">
+                <a class="side-nav-btn" id="Sidebtn" onclick="openNav()">
+                    <img src="./resources/img/side-close.png" alt="close-open" />
+                </a>
+                <a href="" class="side-logo button">
+                    <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
+                </a>
+                <a href="" class="side-btn button">
+                    <img src="./resources/img/recharge-btn.png" alt="recharge-btn" />
+                </a>
+                <div class="side-btn-group">
+                    <a href="" class="side-btn button">
+                        <img src="./resources/img/download-btn.png" alt="download-btn" />
+                    </a>
+                    <a href="" class="side-btn button">
+                        <img src="../resources/img/signup-btn.png" alt="signup-btn" />
+                    </a>
+                    <a href="" class="side-btn button">
+                        <img src="./resources/img/fanpage-btn.png" alt="fanpage-btn" />
+                    </a>
+                    <a href="" class="side-btn button">
+                        <img src="./resources/img/community-btn.png" alt="community-btn" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main -->
+            <main class="content">
+                <!-- Section-1 -->
+                <div class="section-1">
+                    <!-- Left Menu -->
+                    <div class="left-menu background">
+                        <a href="" class="button">
+                            <img src="./resources/img/download.png" alt="">
+                        </a>
+                        <div class="accordion-group">
+                            <button class="accordion background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                                <p>Cẩm nang</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="panel">
+                                <a href="manual.html">
+                                    Cốt truyện
+                                </a>
+                                <a href="">
+                                    Thao tác cơ bản
+                                </a>
+                            </div>
+
+                            <button class="accordion background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                                <p>Hướng dẫn tân thủ</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="panel">
+                                <a href="">
+                                    Nhiệm vụ tân thủ
+                                </a>
+                                <a href="">
+                                    Bí kíp thăng cấp nhanh
+                                </a>
+                                <a href="">
+                                    Nhiệm vụ Ám sát Thái Tử
+                                </a>
+                                <a href="">
+                                    Nhiệm vụ Màn Thầu
+                                </a>
+                                <a href="">
+                                    Nhiệm vụ nuôi Boss
+                                </a>
+                                <a href="">
+                                    Nhiệm vụ Bữa cơm
+                                </a>
+                                <a href="">
+                                    Chế tạo trang bị
+                                </a>
+                                <a href="">
+                                    Nâng cấp trang bị
+                                </a>
+                            </div>
+
+                            <button class="accordion background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                                <p>Báo lỗi</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+
+                            <button class="accordion background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                                <p>Tài khoản/Bảo mật</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h1>1900 988961</h1>
+                            <p>Thời gian: 8:30 - 22:00</p>
+                        </div>
+                    </div>
+                    <!-- Button-Group-Mobile -->
+                    <div class="btn-group-mobile">
+                        <a href="#" class="recharge-btn-mobi button">
+                            <img src="./resources/img/recharge-btn-mobi.png" alt="recharge-btn-mobi" />
+                        </a>
+                        <div class="download-btn-group">
+                            <a href="#" class="button">
+                                <img src="./resources/img/download-google-mobi.png" alt="google-play" />
+                            </a>
+                            <a href="#" class="button">
+                                <img src="./resources/img/download-apple-mobi.png" alt="apple" />
+                            </a>
+                            <a href="#" class="button">
+                                <img src="./resources/img/download-apk-mobi.png" alt="apk" />
+                            </a>
+                        </div>
+                        <a href="#" class="signin-signup-mobi button">
+                            <img src="./resources/img/signin-signup-mobi.png" alt="signin-signup-btn" />
+                        </a>
+                    </div>
+                    <!--New Content-->
+                    <div class="title_news">
+                        <img src="resources/img/title_news.png" alt="">
+                    </div>
+                    <div class="news_content">
+                        <div class="board_info_news background">
+                            <div id="news-detail-board-page">
+                                <h1>Mở tính năng Đua Xe Đạp - Đua Thuyền Rồng Lễ Hội Việt Nam</h1>
+                                <span class="">
+                                    <a href="#">Trang chủ</a>
+                                    <span class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1em"
+                                            viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1l-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4" />
+                                        </svg>
+                                    </span>
+                                    <p>Tin tức</p>
+                                </span>
+                            </div>
+                            <div class="board-banner-news">
+                                <a href="">
+                                    <img src="./resources/img/banner_news.png" class="img1" alt="">
+                                </a>
+                            </div>
+                            <div class="board-content-news">
+                                <br>
+                                <p>Hàng năm, cứ đúng vào ngày 20 và 21 tháng Giêng, huyện đảo Cát Hải (thành phố Hải
+                                    Phòng) lại tổ chức Lễ hội đua thuyền truyền thống.
+                                    Sau một khoảng thời gian dài bị trì hoãn bởi dịch bệnh Covid-19, lễ hội được tổ chức
+                                    năm Quý Mão 2023 lần này đã thu hút nhiều người dân và cả du khách thập phương đến
+                                    tham dự.</p>
+                                <br>
+                                <p>Lễ hội Cầu mùa 21 tháng Giêng, lễ hội đua thuyền truyền thống hay còn được người dân
+                                    đảo Cát Hải gọi với cái tên dân dã - “chèo bơi” là một trong những lễ hội đã có từ
+                                    rất lâu đời, với mong muốn cầu Nam Hải đại vương, vị thần cai quản vùng biển, phù hộ
+                                    cho người dân trên đảo một năm tới mưa thuận gió hòa, tôm cá bội thu.</p>
+                                <br>
+                            </div>
+                            <div class="board-banner1">
+                                <a href="">
+                                    <img src="./resources/img/banner_news1.png" class="img2" alt="">
+                                </a>
+                            </div>
+                            <div class="board-content-news">
+                                <br>
+                                <p>Hàng năm, cứ đúng vào ngày 20 và 21 tháng Giêng, huyện đảo Cát Hải (thành phố Hải
+                                    Phòng) lại tổ chức Lễ hội đua thuyền truyền thống.
+                                    Sau một khoảng thời gian dài bị trì hoãn bởi dịch bệnh Covid-19, lễ hội được tổ chức
+                                    năm Quý Mão 2023 lần này đã thu hút nhiều người dân và cả du khách thập phương đến
+                                    tham dự.</p>
+                                <br>
+                                <p>Lễ hội Cầu mùa 21 tháng Giêng, lễ hội đua thuyền truyền thống hay còn được người dân
+                                    đảo Cát Hải gọi với cái tên dân dã - “chèo bơi” là một trong những lễ hội đã có từ
+                                    rất lâu đời, với mong muốn cầu Nam Hải đại vương, vị thần cai quản vùng biển, phù hộ
+                                    cho người dân trên đảo một năm tới mưa thuận gió hòa, tôm cá bội thu.</p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="title" id="title-news">
+                            <img src="./resources/img/title-news.png" alt="">
+                        </div>
+                        <div class="board_info_news1 background">
+                            <div id="news-detail-board-page">
+                                <h1>Cập nhật tính năng mới “Thuyền Chiến
+                                    Công Phá Thành”</h1>
+                                <span class="">
+                                    <p>16/07/2023</p>
+                                </span>
+                            </div>
+                            <div class="board-banner-mobi">
+                                <a href="">
+                                    <img src="./resources/img/Rectangle2.png" class="img3" alt="">
+                                </a>
+                            </div>
+                            <div class="board-content-news">
+                                <br>
+                                <p>Nhằm đem đến một trải nhiệm mới mẻ tới các quý nhân sỹ,
+                                    efun mở tính năng mới có tên: Thuyền Chiến Công Phá Thành”</p>
+                                <br>
+                                <p>Tính năng này sẽ đem đến cho người chơi rất nhiều điều bất
+                                    ngờ từ việc đua thuyền cho đến việc Quốc Chiến... </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-images">
+                    <a href="" class="footer-logo button">
+                        <img src="./resources/img/logo-pc.png" alt="logo-pc">
+                    </a>
+                    <img src="./resources/img/18+.png" alt="">
+                </div>
+                <div class="footer-info">
+                    <p>
+                        Phát hành bởi Efun Corp
+                        <br>Hotline: 1900 988961
+                        <br>Email: support@efun.vn
+                        <br>Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                        <br>Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông
+                        tin và Truyền thông cấp ngày 27/10/2006.
+                        <br>Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và
+                        Truyền thông cấp ngày 22/6/2015.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./resources/js/main.js"></script>
+    <script src="./resources/js/flickity.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
