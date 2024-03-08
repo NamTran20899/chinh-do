@@ -314,6 +314,22 @@ ul {
     font-weight: 500;
     color: white;
 }
+.news-list {
+    display: none;
+}
+.events-list {
+    display: none;
+}
+.features-list {
+    display: none;
+}
+.guides-list {
+    display: none;
+}
+.board-content-active {
+    display: flex;
+    flex-direction: column;
+}
 .pagination {
     display: flex;
     box-sizing: initial;
@@ -327,12 +343,12 @@ ul {
 }
 .pagination .pagination-pages li {
     float: left;
-    background-color: #dedede;
+    background-color: #bebcbc;
     list-style: none;
     border-radius: 3px;
     margin-left: 1vw;
 }
-.pagination .pagination-pages li > a {
+.pagination .pagination-pages li p {
     width: 2vw;
     height: 2vw;
     display: block;
@@ -346,12 +362,16 @@ ul {
     justify-items: center;
     cursor: pointer;
 }
-.pagination .pagination-pages li > a:hover {
+.pagination .pagination-pages li p:hover {
     background: white;
     border-radius: 3px;
 }
-.pagination .pagination-pages li > a {
+.pagination .pagination-pages li p {
     cursor: pointer;
+}
+.pagination-active p {
+    background: white;
+    border-radius: 3px;
 }
 /*-- Section-2 --*/
 .section-2 {
@@ -402,7 +422,7 @@ ul {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 10vw;
+    bottom: 8vw;
     z-index: 1;
 }
 .sect-btn-group ul {
@@ -415,6 +435,9 @@ ul {
 }
 .carousel-cell-btn img {
     width: 7vw;
+}
+.sect-active {
+    filter: brightness(120%);
 }
 /*-- Footer --*/
 .footer {
@@ -594,14 +617,14 @@ ul {
     .board-content ul li a p {
         font-size: 4vw;
     }
-    .pagination .pagination-pages li > a {
+    .pagination .pagination-pages li p {
         width: 4vw;
         height: 4vw;
         font-size: 2.5vw;
-        line-height: 3vw;
+        line-height: 3.75vw;
     }
-    .pagination .pagination-pages li > a svg {
-        font-size: 2vw;
+    .pagination .pagination-pages li p svg {
+        font-size: 2.5vw;
     }
     .footer-info {
         font-size: 1.5vw;

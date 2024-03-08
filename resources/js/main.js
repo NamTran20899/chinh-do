@@ -12,11 +12,11 @@ function openNav() {
 }
 
 /*-- Dropdown --*/
-var acc = document.querySelectorAll(".accordion");
-acc.forEach(function (a, index) {
+var accordion = document.querySelectorAll(".accordion");
+accordion.forEach(function (a, index) {
   a.onclick = () => {
     a.classList.toggle("accordion-active");
-    acc.forEach(function (p, i) {
+    accordion.forEach(function (p, i) {
       var panel = p.nextElementSibling;
       if (index === i) {
         if (panel.style.display === "grid") {
@@ -34,13 +34,37 @@ acc.forEach(function (a, index) {
 });
 
 /*-- Board-Button --*/
-var btn = document.querySelectorAll(".board-btn");
+$(".board-btn").click(function () {
+  if (!$(this).hasClass("board-btn-active")) {
+    $(".board-btn.board-btn-active").removeClass("board-btn-active");
+    $(this).addClass("board-btn-active");
+    console.log(2);
+  }
+});
 
-btn.forEach(function (b, index) {
-  b.onclick = () => {
-    b.classList.toggle("board-btn-active");
-    btn.forEach(function (s, i) {});
-  };
+$(".board-btn").click(function () {
+  if ($(this).hasClass("board-btn-active")) {
+    $(".board-content ul.board-content-active").removeClass(
+      "board-content-active"
+    );
+    if ($(this).hasClass("news")) {
+      $(".news-list").addClass("board-content-active");
+    } else if ($(this).hasClass("events")) {
+      $(".events-list").addClass("board-content-active");
+    } else if ($(this).hasClass("features")) {
+      $(".features-list").addClass("board-content-active");
+    } else {
+      $(".guides-list").addClass("board-content-active");
+    }
+  }
+});
+
+/*-- Sect-Button --*/
+$(".carousel-cell-btn").click(function () {
+  if (!$(this).hasClass("sect-active")) {
+    $(".carousel-cell-btn.sect-active").removeClass("sect-active");
+    $(this).addClass("sect-active");
+  }
 });
 
 /*-- Hamburger --*/
