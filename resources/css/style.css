@@ -677,6 +677,9 @@ ul {
         height: 30vw;
         top: 0;
     }
+    .board-info {
+        padding: 2vw 5.25vw 0 1.5vw;
+    }
 }
 @media screen and (max-width: 450px) {
     .signin-signup-mobi img {
