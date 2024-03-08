@@ -38,7 +38,6 @@ $(".board-btn").click(function () {
   if (!$(this).hasClass("board-btn-active")) {
     $(".board-btn.board-btn-active").removeClass("board-btn-active");
     $(this).addClass("board-btn-active");
-    console.log(2);
   }
 });
 

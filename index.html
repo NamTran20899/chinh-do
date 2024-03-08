@@ -82,7 +82,7 @@
         </div>
       </nav>
       <!-- Banner -->
-      <div class="banner">
+      <div class="banner" data-aos="fade-right" data-aos-duration="1200">
         <a href="#" class="qr-code">
           <img src="./resources/img/qr-code.png" alt="qr-code" />
         </a>
@@ -151,7 +151,7 @@
         <!-- Section-1 -->
         <div class="section-1">
           <!-- Left Menu -->
-          <div class="left-menu background">
+          <div class="left-menu background" data-aos="fade-up-right" data-aos-duration="1200">
             <a href="#" class="button">
               <img src="./resources/img/download.png" alt="download-btn" />
             </a>
@@ -246,7 +246,7 @@
           <div class="title" id="title-news">
             <img src="./resources/img/title-news.png" alt="title-news" />
           </div>
-          <div class="board-info background">
+          <div class="board-info background" data-aos="fade-up-left" data-aos-duration="1200">
             <div class="board-banner board-carousel">
               <a href="#">
                 <img src="./resources/img/board-banner-1.png" alt="board-banner" />
@@ -385,7 +385,7 @@
           </div>
         </div>
         <!-- Section-2 -->
-        <div class="section-2">
+        <div class="section-2" data-aos="fade-in" data-aos-duration="1200">
           <div class="title">
             <img src="./resources/img/title-sect.png" alt="title-sect" />
           </div>
@@ -413,19 +413,19 @@
           <!-- Sect-Button -->
           <div class="sect-btn-group">
             <ul class="sect-btn">
-              <li class="carousel-cell-btn button sect-active">
+              <li class="carousel-cell-btn button sect-active" data-aos="flip-up" data-aos-duration="800">
                 <img src="./resources/img/btn-char-1.png" alt="btn-char-1" />
               </li>
-              <li class="carousel-cell-btn button">
-                <img src="./resources/img/btn-char-2.png" alt="btn-char-2" />
+              <li class="carousel-cell-btn button" data-aos="flip-up" data-aos-duration="1200">
+                <img src="./resources/img/btn-char-2.png" alt="btn-char-2""/>
               </li>
-              <li class="carousel-cell-btn button">
+              <li class="carousel-cell-btn button" data-aos="flip-up" data-aos-duration="1600">
                 <img src="./resources/img/btn-char-3.png" alt="btn-char-3" />
               </li>
-              <li class="carousel-cell-btn button">
+              <li class="carousel-cell-btn button" data-aos="flip-up" data-aos-duration="1800">
                 <img src="./resources/img/btn-char-4.png" alt="btn-char-4" />
               </li>
-              <li class="carousel-cell-btn button">
+              <li class="carousel-cell-btn button" data-aos="flip-up" data-aos-duration="2200">
                 <img src="./resources/img/btn-char-5.png" alt="btn-char-5" />
               </li>
             </ul>
@@ -459,6 +459,10 @@
   <script src="./resources/js/flickity.js"></script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
   <!-- Js -->
   <script src="./resources/js/main.js"></script>
 </body>
