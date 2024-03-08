@@ -6,6 +6,7 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Font -->
@@ -13,233 +14,543 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
 
     <title>Trang chủ</title>
 </head>
 <body>
-    <div class="body-container">
-      <header class="header background">
-        <!-- Navbar -->
-        <nav class="navbar">
-          <a href="#" class="logo button">
-            <img src="./resources/img/logo-pc.png" alt="logo-pc" />
+  <div class="body-container">
+    <header class="header background">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="#" class="logo button">
+          <img src="./resources/img/logo-pc.png" alt="logo-pc" />
+        </a>
+        <ul>
+          <li>
+            <a href="#">Trang Chủ</a>
+          </li>
+          <li>
+            <a href="#">Cẩm Nang</a>
+          </li>
+          <li>
+            <a href="#">Sự Kiện</a>
+          </li>
+          <li>
+            <a href="#">Tin Tức</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Navbar-Responsive -->
+      <nav class="navbar-mobile">
+        <a href="" class="logo-mobile">
+          <img src="./resources/img/logo-mobi.png" alt="" />
+        </a>
+        <div class="mobile-btn">
+          <a href="" class="button">
+            <img src="./resources/img/download-btn.png" alt="download-btn" />
           </a>
+          <a href="" class="button">
+            <img src="./resources/img/signup-btn.png" alt="signup-btn" />
+          </a>
+        </div>
+        <a class="hamburger-btn" onclick="hamburgerBtn()">
+          <img src="./resources/img/hamburger-btn.png" alt="" />
+        </a>
+        <div class="hamburger-menu" id="hamburger">
           <ul>
             <li>
-              <a href="#">Trang Chủ</a>
+              <a href="#" class="">Đăng nhập/Đăng ký</a>
             </li>
             <li>
-              <a href="#">Cẩm Nang</a>
+              <a href="#" class="">Cẩm nang</a>
             </li>
             <li>
-              <a href="#">Sự Kiện</a>
+              <a href="#" class="">Hướng dẫn tân thủ</a>
             </li>
             <li>
-              <a href="#">Tin Tức</a>
+              <a href="#" class="">Nạp thẻ</a>
+            </li>
+            <li>
+              <a href="#" class="">Báo lỗi</a>
+            </li>
+            <li>
+              <a href="#" class="">1900 988961</a>
             </li>
           </ul>
-        </nav>
-        <!-- Banner -->
-        <div class="banner">
-          <a href="" class="qr-code">
-            <img src="./resources/img/qr-code.png" alt="qr-code" />
+        </div>
+      </nav>
+      <!-- Banner -->
+      <div class="banner">
+        <a href="" class="qr-code">
+          <img src="./resources/img/qr-code.png" alt="qr-code" />
+        </a>
+        <div class="banner-btn">
+          <a href="" class="button">
+            <img src="./resources/img/banner-btn-1.png" alt="signin-signup-btn" />
           </a>
-          <div class="banner-btn">
-            <a href="" class="button">
-              <img src="./resources/img/banner-btn-1.png" alt="signin-signup-btn" />
-            </a>
-            <a href="" class="button">
-              <img src="./resources/img/banner-btn-2.png" alt="recharge-card" />
-            </a>
-          </div>
-          <a href="" class="block-18">
-            <img src="./resources/img/18+.png" alt="18+" />
+          <a href="" class="button">
+            <img src="./resources/img/banner-btn-2.png" alt="recharge-card" />
           </a>
         </div>
-      </header>
-
-      <div class="main-container background">
-        <!-- Sidenav -->
-        <div class="side-nav background" id="Sidenav">
-          <a class="side-nav-btn" id="Sidebtn" onclick="openNav()">
-            <img src="./resources/img/side-close.png" alt="close-open" />
-          </a>
-          <a href="" class="side-logo button">
-            <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
+        <a href="" class="block-18">
+          <img src="./resources/img/18+.png" alt="18+" />
+        </a>
+      </div>
+      <!-- Banner-Mobile -->
+      <div class="banner-mobi-carousel">
+        <a class="carousel-cell">
+          <img class="" src="./resources/img/banner-mobi.png" />
+        </a>
+        <a class="carousel-cell">
+          <img class="" src="./resources/img/banner-mobi.png" />
+        </a>
+        <a class="carousel-cell">
+          <img class="" src="./resources/img/banner-mobi.png" />
+        </a>
+        <a class="carousel-cell">
+          <img class="" src="./resources/img/banner-mobi.png" />
+        </a>
+        <a class="carousel-cell">
+          <img class="" src="./resources/img/banner-mobi.png" />
+        </a>
+      </div>
+    </header>
+    
+    <!-- Content -->
+    <div class="main-container background">
+      <!-- Sidenav -->
+      <div class="side-nav background" id="Sidenav">
+        <a class="side-nav-btn" id="Sidebtn" onclick="openNav()">
+          <img src="./resources/img/side-close.png" alt="close-open" />
+        </a>
+        <a href="" class="side-logo button">
+          <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
+        </a>
+        <a href="" class="side-btn button">
+          <img src="./resources/img/recharge-btn.png" alt="recharge-btn" />
+        </a>
+        <div class="side-btn-group">
+          <a href="" class="side-btn button">
+            <img src="./resources/img/download-btn.png" alt="download-btn" />
           </a>
           <a href="" class="side-btn button">
-            <img src="./resources/img/recharge-btn.png" alt="recharge-btn" />
+            <img src="../resources/img/signup-btn.png" alt="signup-btn" />
           </a>
-          <div class="side-btn-group">
-            <a href="" class="side-btn button">
-              <img src="./resources/img/download-btn.png" alt="download-btn" />
-            </a>
-            <a href="" class="side-btn button">
-              <img src="../resources/img/signup-btn.png" alt="signup-btn" />
-            </a>
-            <a href="" class="side-btn button">
-              <img src="./resources/img/fanpage-btn.png" alt="fanpage-btn" />
-            </a>
-            <a href="" class="side-btn button">
-              <img src="./resources/img/community-btn.png" alt="community-btn" />
-            </a>
-          </div>
+          <a href="" class="side-btn button">
+            <img src="./resources/img/fanpage-btn.png" alt="fanpage-btn" />
+          </a>
+          <a href="" class="side-btn button">
+            <img src="./resources/img/community-btn.png" alt="community-btn" />
+          </a>
         </div>
-
-        <!-- Main -->
-        <main class="content">
-          <!-- Section-1 -->
-          <div class="section-1">
-            <!-- Left Menu -->
-            <div class="left-menu background">
-              <a href="" class="button">
-                <img src="./resources/img/download.png" alt="">
-              </a>
-              <div class="accordion-group">
-                <button class="accordion background">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
-                  <p>Cẩm nang</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
-                </button>
-                <div class="panel">
-                  <a href="">
-                    Cốt truyện
-                  </a>
-                  <a href="">
-                    Thao tác cơ bản
-                  </a>
-                </div>
-
-                <button class="accordion background">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
-                  <p>Hướng dẫn tân thủ</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
-                </button>
-                <div class="panel">
-                  <a href="">
-                    Nhiệm vụ tân thủ
-                  </a>
-                  <a href="">
-                    Bí kíp thăng cấp nhanh
-                  </a>
-                  <a href="">
-                    Nhiệm vụ Ám sát Thái Tử
-                  </a>
-                  <a href="">
-                    Nhiệm vụ Màn Thầu
-                  </a>
-                  <a href="">
-                    Nhiệm vụ nuôi Boss
-                  </a>
-                  <a href="">
-                    Nhiệm vụ Bữa cơm
-                  </a>
-                  <a href="">
-                    Chế tạo trang bị
-                  </a>
-                  <a href="">
-                    Nâng cấp trang bị
-                  </a>
-                </div>
-
-                <button class="accordion background">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
-                  <p>Báo lỗi</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
-                </button>
-                <div class="panel">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-
-                <button class="accordion background">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
-                  <p>Tài khoản/Bảo mật</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
-                </button>
-                <div class="panel">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-              <div class="info">
-                <h1>1900 988961</h1>
-                <p>Thời gian: 8:30 - 22:00</p>
-              </div>
-            </div>
-
-            <!-- Board Info -->
-            <div class="board-info background">
-              <div class="board-banner">
+      </div>
+      <!-- Main -->
+      <main class="content">
+        <!-- Section-1 -->
+        <div class="section-1">
+          <!-- Left Menu -->
+          <div class="left-menu background">
+            <a href="" class="button">
+              <img src="./resources/img/download.png" alt="">
+            </a>
+            <div class="accordion-group">
+              <button class="accordion background">
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
+                <p>Cẩm nang</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
+              </button>
+              <div class="panel">
                 <a href="">
-                  <img src="./resources/img/board-banner-1.png" alt="">
+                  Cốt truyện
+                </a>
+                <a href="">
+                  Thao tác cơ bản
                 </a>
               </div>
-              <ul class="board-btn-group">
-                <li class="button background">
-                  <p>TIN TỨC</p>
-                </li>
-                <li class="button background">
-                  <p>SỰ KIỆN</p>
-                </li>
-                <li class="button background">
-                  <p>TÍNH NĂNG</p>
-                </li>
-                <li class="button background">
-                  <p>HƯỚNG DẪN</p>
-                </li>
+              <button class="accordion background">
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
+                <p>Hướng dẫn tân thủ</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
+              </button>
+              <div class="panel">
+                <a href="">
+                  Nhiệm vụ tân thủ
+                </a>
+                <a href="">
+                  Bí kíp thăng cấp nhanh
+                </a>
+                <a href="">
+                  Nhiệm vụ Ám sát Thái Tử
+                </a>
+                <a href="">
+                  Nhiệm vụ Màn Thầu
+                </a>
+                <a href="">
+                  Nhiệm vụ nuôi Boss
+                </a>
+                <a href="">
+                  Nhiệm vụ Bữa cơm
+                </a>
+                <a href="">
+                  Chế tạo trang bị
+                </a>
+                <a href="">
+                  Nâng cấp trang bị
+                </a>
+              </div>
+              <button class="accordion background">
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
+                <p>Báo lỗi</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
+              </button>
+              <div class="panel">
+                <p>Lorem ipsum...</p>
+              </div>
+              <button class="accordion background">
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
+                <p>Tài khoản/Bảo mật</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
+              </button>
+              <div class="panel">
+                <p>Lorem ipsum...</p>
+              </div>
+            </div>
+            <div class="info">
+              <h1>1900 988961</h1>
+              <p>Thời gian: 8:30 - 22:00</p>
+            </div>
+          </div>
+          <!-- Button-Group-Mobile -->
+          <div class="btn-group-mobile">
+            <a href="" class="recharge-btn-mobi button">
+              <img src="./resources/img/recharge-btn-mobi.png" alt="" />
+            </a>
+            <div class="download-btn-group">
+              <a href="" class="button">
+                <img src="./resources/img/download-google-mobi.png" alt="" />
+              </a>
+              <a href="" class="button">
+                <img src="./resources/img/download-apple-mobi.png" alt="" />
+              </a>
+              <a href="" class="button">
+                <img src="./resources/img/download-apk-mobi.png" alt="" />
+              </a>
+            </div>
+            <a href="" class="signin-signup-mobi button">
+              <img src="./resources/img/signin-signup-mobi.png" alt="" />
+            </a>
+          </div>
+          <!-- Board Info -->
+          <div class="title" id="title-news">
+            <img src="./resources/img/title-news.png" alt="title-news" />
+          </div>
+          <div class="board-info background">
+            <div class="board-banner board-carousel">
+              <a href="">
+                <img data-flickity-lazyload-src="./resources/img/board-banner-1.png" alt="">
+              </a>
+              <a href="">
+                <img data-flickity-lazyload-src="./resources/img/board-banner-1.png" alt="">
+              </a>
+              <a href="">
+                <img data-flickity-lazyload-src="./resources/img/board-banner-1.png" alt="">
+              </a>
+              <a href="">
+                <img data-flickity-lazyload-src="./resources/img/board-banner-1.png" alt="">
+              </a>
+              <a href="">
+                <img data-flickity-lazyload-src="./resources/img/board-banner-1.png" alt="">
+              </a>
+            </div>
+            <ul class="board-btn-group">
+              <li class="board-btn button background">
+                <p>TIN TỨC</p>
+              </li>
+              <li class="board-btn button background">
+                <p>SỰ KIỆN</p>
+              </li>
+              <li class="board-btn button background">
+                <p>TÍNH NĂNG</p>
+              </li>
+              <li class="board-btn button background">
+                <p>HƯỚNG DẪN</p>
+              </li>
+            </ul>
+            <div class="board-content">
+              <ul>
+                <div id="news">
+                  <li>
+                    <a href="">
+                      <p>Thông báo cập nhật máy chủ</p>
+                      <p>30/10/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Khai mở trường phái mới - Võ Thuật</p>
+                      <p>10/09/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Đua Xe - Ngày Hè Sôi Động</p>
+                      <p>10/06/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Thăng cấp trang bị Huyền Thoại</p>
+                      <p>05/06/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Mở tính năng Đua Xe Đạp - Đua Thuyền Rồng Lễ Hội Việt Nam</p>
+                      <p>05/05/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Cập nhật thêm phần thưởng tầng 15 tính năng Thí Luyện Vô Hạn</p>
+                      <p>01/05/2022</p>
+                    </a>
+                  </li>
+                </div>
               </ul>
-              <div class="board-content">
+              <!--
+              <ul>
+                <div id="events">
+                  <li>
+                    <a href="">
+                      <p>Thông báo cập nhật máy chủ</p>
+                      <p>30/10/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Khai mở trường phái mới - Võ Thuật</p>
+                      <p>10/09/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Đua Xe - Ngày Hè Sôi Động</p>
+                      <p>10/06/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Thăng cấp trang bị Huyền Thoại</p>
+                      <p>05/06/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Mở tính năng Đua Xe Đạp - Đua Thuyền Rồng Lễ Hội Việt Nam</p>
+                      <p>05/05/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Cập nhật thêm phần thưởng tầng 15 tính năng Thí Luyện Vô Hạn</p>
+                      <p>01/05/2022</p>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+              <ul>
+                <div id="features">
+                  <li>
+                    <a href="">
+                      <p>Thông báo cập nhật máy chủ</p>
+                      <p>30/10/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Khai mở trường phái mới - Võ Thuật</p>
+                      <p>10/09/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Đua Xe - Ngày Hè Sôi Động</p>
+                      <p>10/06/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Thăng cấp trang bị Huyền Thoại</p>
+                      <p>05/06/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Mở tính năng Đua Xe Đạp - Đua Thuyền Rồng Lễ Hội Việt Nam</p>
+                      <p>05/05/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Cập nhật thêm phần thưởng tầng 15 tính năng Thí Luyện Vô Hạn</p>
+                      <p>01/05/2022</p>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+              <ul>
+                <div id="guides">
+                  <li>
+                    <a href="">
+                      <p>Thông báo cập nhật máy chủ</p>
+                      <p>30/10/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Khai mở trường phái mới - Võ Thuật</p>
+                      <p>10/09/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Đua Xe - Ngày Hè Sôi Động</p>
+                      <p>10/06/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Thăng cấp trang bị Huyền Thoại</p>
+                      <p>05/06/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Mở tính năng Đua Xe Đạp - Đua Thuyền Rồng Lễ Hội Việt Nam</p>
+                      <p>05/05/2022</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>Cập nhật thêm phần thưởng tầng 15 tính năng Thí Luyện Vô Hạn</p>
+                      <p>01/05/2022</p>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+              -->
+            </div>
+            <!-- Pagination -->
+            <div class="pagination">
+              <div class="pagination-pages">
                 <ul>
-                  <div id="">
-                    <li>
-                      <a href="">
-                        <p>Thông báo cập nhật máy chủ</p>
-                        <p>30/10/2022</p>
-                      </a>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </div>
+                  <li>
+                    <a>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1.7em" height="1.7em" viewBox="0 0 24 24"><path fill="currentColor" d="M14.121 17.243a.997.997 0 0 1-.707-.293l-4.242-4.243a1 1 0 0 1 0-1.414l4.242-4.243a1 1 0 0 1 1.414 1.414L11.293 12l3.535 3.536a1 1 0 0 1-.707 1.707"/></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">1</a>
+                  </li>
+                  <li>
+                    <a href="">2</a>
+                  </li>
+                  <li>
+                    <a href="">...</a>
+                  </li>
+                  <li>
+                    <a href="">9</a>
+                  </li>
+                  <li>
+                    <a href="">10</a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1.7em" height="1.7em" viewBox="0 0 24 24"><path fill="currentColor" d="M9.879 17.243a1 1 0 0 1-.707-1.707L12.707 12L9.172 8.464a1 1 0 0 1 1.414-1.414l4.242 4.243a1 1 0 0 1 0 1.414l-4.242 4.243a.997.997 0 0 1-.707.293"/></svg>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
-
-          <!-- Section-2 -->
-          <div class="section-2">
-            <div></div>
+        </div>
+        <!-- Section-2 -->
+        <div class="section-2">
+          <div class="title">
+            <img src="./resources/img/title-sect.png" alt="title-sect" />
           </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-          <div class="footer-images">
-            <a href="" class="footer-logo button">
-              <img src="./resources/img/logo-pc.png" alt="logo-pc">
-            </a>
-            <img src="./resources/img/18+.png" alt="">
+          <!-- Sect-Images -->
+          <div class="sect-carousel">
+            <div class="carousel-cell">
+              <img class="carousel-cell-image" data-flickity-lazyload-src="./resources/img/char-1.png" alt="than-nghe" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image" data-flickity-lazyload-src="./resources/img/char-2.png" alt="trieu-hoi" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image" data-flickity-lazyload-src="./resources/img/char-3.png" alt="phap-thuat" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image" data-flickity-lazyload-src="./resources/img/char-4.png" alt="tien-thuat" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image" data-flickity-lazyload-src="./resources/img/char-5.png" alt="vo-thuat" />
+            </div>
           </div>
-          <div class="footer-info">
-            <p>
-              Phát hành bởi Efun Corp
-              <br>Hotline: 1900 988961
-              <br>Email: support@efun.vn
-              <br>Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
-              <br>Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
-              <br>Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
-            </p>
+          <div class="bg-sect">
+            <img src="./resources/img/bg-sect.png" alt="sect-bg" />
           </div>
-        </footer>
-      </div>  
-    </div>
+          <!-- Sect-Button -->
+          <div class="sect-btn-group">
+            <ul class="sect-btn">
+              <li class="carousel-cell-btn button">
+                <img src="./resources/img/btn-char-1.png" alt="" />
+              </li>
+              <li class="carousel-cell-btn button">
+                <img src="./resources/img/btn-char-2.png" alt="" />
+              </li>
+              <li class="carousel-cell-btn button">
+                <img src="./resources/img/btn-char-3.png" alt="" />
+              </li>
+              <li class="carousel-cell-btn button">
+                <img src="./resources/img/btn-char-4.png" alt="" />
+              </li>
+              <li class="carousel-cell-btn button">
+                <img src="./resources/img/btn-char-5.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
 
-    <!-- Js -->
-    <script src="./resources/js/main.js"></script>
-    <!-- Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-images">
+          <a href="" class="footer-logo button">
+            <img src="./resources/img/logo-pc.png" alt="logo-pc" />
+          </a>
+          <img src="./resources/img/18+.png" alt="18+" />
+        </div>
+        <div class="footer-info">
+          <p>
+            Phát hành bởi Efun Corp
+            <br>Hotline: 1900 988961
+            <br>Email: support@efun.vn
+            <br>Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+            <br>Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
+            <br>Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
+          </p>
+        </div>
+      </footer>
+    </div>  
+  </div>
+
+    
+  <!-- Flickity -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./resources/js/flickity.js"></script>
+  <!-- Js -->
+  <script src="./resources/js/main.js"></script>
 </body>
 </html>

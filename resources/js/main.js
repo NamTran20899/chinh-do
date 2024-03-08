@@ -12,17 +12,46 @@ function openNav() {
 }
 
 /*-- Dropdown --*/
-var acc = document.getElementsByClassName("accordion");
-var i;
+var acc = document.querySelectorAll(".accordion");
+acc.forEach(function (a, index) {
+  a.onclick = () => {
+    a.classList.toggle("accordion-active");
+    acc.forEach(function (p, i) {
+      var panel = p.nextElementSibling;
+      if (index === i) {
+        if (panel.style.display === "grid") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "grid";
+        }
+      } else {
+        a.classList.remove("accordion-active");
+        var panel2 = p.nextElementSibling;
+        panel2.style.display = "none";
+      }
+    });
+  };
+});
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "grid") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "grid";
-    }
-  });
+/*-- Board-Button --*/
+var btn = document.querySelectorAll(".board-btn");
+
+btn.forEach(function (b, index) {
+  b.onclick = () => {
+    b.classList.toggle("board-btn-active");
+    btn.forEach(function (s, i) {});
+  };
+});
+
+/*-- Hamburger --*/
+function hamburgerBtn() {
+  const menuWidth = document.getElementById("hamburger").style.display;
+
+  if (menuWidth == "block") {
+    document.getElementById("hamburger").style.display = "none";
+    document.getElementById("hamburger").style.transform = "translateX(100%)";
+  } else {
+    document.getElementById("hamburger").style.display = "block";
+    document.getElementById("hamburger").style.transform = "translateX(0%)";
+  }
 }
