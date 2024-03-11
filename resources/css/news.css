@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.title_news {
+    position: absolute;
+    top: 37vw;
+    right: 25vw;
+}
+.title_news img{
+    width: 28vw;
+}
+.board_info_news{
+    background-image: url(../img/border_news.png);
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    padding: 2vw 1.5vw 0 1.5vw;
+    z-index: 0;
+    margin-bottom: 20vw;
+}
+#news-detail-board-page h1 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
+    color: white;
+    text-align: left;
+    border-bottom: 0.5px solid wheat;
+}
+#news-detail-board-page p {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.9vw;
+    color: white;
+    text-align: left;
+    margin-top: 1.5%;
+}
+#news-detail-board-page span {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.4vw;
+    color: white;
+    text-align: left;
+}
+.board-banner-news{
+    margin-top: 1vw;
+}
+.board-banner-news .img1{
+    width: 100%;
+}
+.board-content-news p{
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: white;
+}
+.board-banner1{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+}
+.board-banner1 .img2{
+    width: 45vw;
+}
+.title-news-mobi{
+    display: none;
+}
+.board_info_news1{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .title_news {
+        display: none;
+    }
+    .news_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .board_info_news{
+        display: none;
+    }
+    .board_info_news1{
+        background-image: url(../img/border_mobi.png);
+        flex-direction: column;
+        padding: 2vw 3.5vw 0 3.5vw;
+        z-index: 0;
+        display: flex;
+        width: 90vw;
+        height: 164vw;
+    }
+    .board-banner-mobi .img3{
+        width: 82.9vw;
+    }
+    #news-detail-board-page{
+        margin: 1vw 0vw 1vw 0vw;
+    }
+    #news-detail-board-page h1 {
+        font-size: 4.5vw;
+        border-bottom: 0.5px solid white;
+    }
+    #news-detail-board-page span {
+        font-size: 1.8vw;
+    }
+    .board-content-news p{
+        font-size: 2.7vw;
+    }
+}
