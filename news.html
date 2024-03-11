@@ -1,152 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Css -->
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+        
     <link rel="icon" type="image/x-icon" href="./resources/img/logo-pc.png">
-    <title>Tin Tức</title>
+    <title>Trang chủ</title>
 </head>
-
 <body>
     <div class="body-container">
         <header class="header background">
             <!-- Navbar -->
             <nav class="navbar">
-                <a href="#" class="logo button">
-                    <img src="./resources/img/logo-pc.png" alt="logo-pc" />
-                </a>
-                <ul>
-                    <li>
-                        <a href="index.html">Trang Chủ</a>
-                    </li>
-                    <li>
-                        <a href="manual.html">Cẩm Nang</a>
-                    </li>
-                    <li>
-                        <a href="#">Sự Kiện</a>
-                    </li>
-                    <li>
-                        <a href="news.html">Tin Tức</a>
-                    </li>
-                </ul>
+              <a href="#" class="logo button">
+                <img src="./resources/img/logo-pc.png" alt="logo-pc" />
+              </a>
+              <ul>
+                <li>
+                  <a href="#">Trang Chủ</a>
+                </li>
+                <li>
+                  <a href="#">Cẩm Nang</a>
+                </li>
+                <li>
+                  <a href="#">Sự Kiện</a>
+                </li>
+                <li>
+                  <a href="#">Tin Tức</a>
+                </li>
+              </ul>
             </nav>
+            <!-- Navbar-Responsive -->
             <nav class="navbar-mobile">
-                <a href="#" class="logo-mobile button">
-                    <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
+              <a href="#" class="logo-mobile button">
+                <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
+              </a>
+              <div class="mobile-btn">
+                <a href="#" class="button">
+                  <img src="./resources/img/download-btn.png" alt="download-btn" />
                 </a>
-                <div class="mobile-btn">
-                    <a href="#" class="button">
-                        <img src="./resources/img/download-btn.png" alt="download-btn" />
-                    </a>
-                    <a href="#" class="button">
-                        <img src="./resources/img/signup-btn.png" alt="signup-btn" />
-                    </a>
-                </div>
-                <a class="hamburger-btn" onclick="hamburgerBtn()">
-                    <img src="./resources/img/hamburger-btn.png" alt="hamburger-btn" />
+                <a href="#" class="button">
+                  <img src="./resources/img/signup-btn.png" alt="signup-btn" />
                 </a>
-                <div class="hamburger-menu" id="hamburger">
-                    <ul>
-                        <li>
-                            <a href="#" class="">Đăng nhập/Đăng ký</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">Cẩm nang</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">Hướng dẫn tân thủ</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">Nạp thẻ</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">Báo lỗi</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">1900 988961</a>
-                        </li>
-                    </ul>
-                </div>
+              </div>
+              <a class="hamburger-btn" onclick="hamburgerBtn()">
+                <img src="./resources/img/hamburger-btn.png" alt="hamburger-btn" />
+              </a>
+              <div class="hamburger-menu" id="hamburger">
+                <ul>
+                  <li>
+                    <a href="#" class="">Đăng nhập/Đăng ký</a>
+                  </li>
+                  <li>
+                    <a href="#" class="">Cẩm nang</a>
+                  </li>
+                  <li>
+                    <a href="#" class="">Hướng dẫn tân thủ</a>
+                  </li>
+                  <li>
+                    <a href="#" class="">Nạp thẻ</a>
+                  </li>
+                  <li>
+                    <a href="#" class="">Báo lỗi</a>
+                  </li>
+                  <li>
+                    <a href="#" class="">1900 988961</a>
+                  </li>
+                </ul>
+              </div>
             </nav>
             <!-- Banner -->
-            <div class="banner">
-                <a href="" class="qr-code">
-                    <img src="./resources/img/qr-code.png" alt="qr-code" />
+            <div class="banner" data-aos="fade-right" data-aos-duration="1200">
+              <a href="#" class="qr-code">
+                <img src="./resources/img/qr-code.png" alt="qr-code" />
+              </a>
+              <div class="banner-btn">
+                <a href="#" class="button">
+                  <img src="./resources/img/banner-btn-1.png" alt="signin-signup-btn" />
                 </a>
-                <div class="banner-btn">
-                    <a href="" class="button">
-                        <img src="./resources/img/banner-btn-1.png" alt="signin-signup-btn" />
-                    </a>
-                    <a href="" class="button">
-                        <img src="./resources/img/banner-btn-2.png" alt="recharge-card" />
-                    </a>
-                </div>
-                <a href="" class="block-18">
-                    <img src="./resources/img/18+.png" alt="18+" />
+                <a href="#" class="button">
+                  <img src="./resources/img/banner-btn-2.png" alt="recharge-card" />
                 </a>
+              </div>
+              <a href="#" class="block-18">
+                <img src="./resources/img/18+.png" alt="18+" />
+              </a>
             </div>
             <!-- Banner-Mobile -->
             <div class="banner-mobi-carousel">
-                <a class="carousel-cell">
-                    <img class="" src="./resources/img/banner-mobi.png" />
-                </a>
-                <a class="carousel-cell">
-                    <img class="" src="./resources/img/banner-mobi.png" />
-                </a>
-                <a class="carousel-cell">
-                    <img class="" src="./resources/img/banner-mobi.png" />
-                </a>
-                <a class="carousel-cell">
-                    <img class="" src="./resources/img/banner-mobi.png" />
-                </a>
-                <a class="carousel-cell">
-                    <img class="" src="./resources/img/banner-mobi.png" />
-                </a>
+              <a class="carousel-cell">
+                <img class="" src="./resources/img/banner-mobi.png" />
+              </a>
+              <a class="carousel-cell">
+                <img class="" src="./resources/img/banner-mobi.png" />
+              </a>
+              <a class="carousel-cell">
+                <img class="" src="./resources/img/banner-mobi.png" />
+              </a>
+              <a class="carousel-cell">
+                <img class="" src="./resources/img/banner-mobi.png" />
+              </a>
+              <a class="carousel-cell">
+                <img class="" src="./resources/img/banner-mobi.png" />
+              </a>
             </div>
         </header>
 
         <div class="main-container background">
             <!-- Sidenav -->
-            <div class="side-nav background" id="Sidenav">
-                <a class="side-nav-btn" id="Sidebtn" onclick="openNav()">
-                    <img src="./resources/img/side-close.png" alt="close-open" />
-                </a>
-                <a href="" class="side-logo button">
-                    <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
-                </a>
-                <a href="" class="side-btn button">
-                    <img src="./resources/img/recharge-btn.png" alt="recharge-btn" />
-                </a>
-                <div class="side-btn-group">
-                    <a href="" class="side-btn button">
-                        <img src="./resources/img/download-btn.png" alt="download-btn" />
-                    </a>
-                    <a href="" class="side-btn button">
-                        <img src="../resources/img/signup-btn.png" alt="signup-btn" />
-                    </a>
-                    <a href="" class="side-btn button">
-                        <img src="./resources/img/fanpage-btn.png" alt="fanpage-btn" />
-                    </a>
-                    <a href="" class="side-btn button">
-                        <img src="./resources/img/community-btn.png" alt="community-btn" />
-                    </a>
-                </div>
-            </div>
+      <div class="side-nav background" id="Sidenav">
+        <a class="side-nav-btn" id="Sidebtn" onclick="openNav()">
+          <img src="./resources/img/side-close.png" alt="close-open" />
+        </a>
+        <a href="#" class="side-logo button">
+          <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
+        </a>
+        <a href="#" class="side-btn button">
+          <img src="./resources/img/recharge-btn.png" alt="recharge-btn" />
+        </a>
+        <div class="side-btn-group">
+          <a href="#" class="side-btn button">
+            <img src="./resources/img/download-btn.png" alt="download-btn" />
+          </a>
+          <a href="#" class="side-btn button">
+            <img src="../resources/img/signup-btn.png" alt="signup-btn" />
+          </a>
+          <a href="#" class="side-btn button">
+            <img src="./resources/img/fanpage-btn.png" alt="fanpage-btn" />
+          </a>
+          <a href="#" class="side-btn button">
+            <img src="./resources/img/community-btn.png" alt="community-btn" />
+          </a>
+        </div>
+      </div>
 
             <!-- Main -->
             <main class="content">
@@ -154,7 +152,7 @@
                 <div class="section-1">
                     <!-- Left Menu -->
                     <div class="left-menu">
-                        <div class="left-menu-body background">
+                        <div class="left-menu-body background" data-aos="fade-up-right" data-aos-duration="1200">
                             <a href="#" class="download button">
                                 <img src="./resources/img/download.png" alt="download-btn" />
                             </a>
@@ -251,7 +249,7 @@
                         <img src="resources/img/title.png" alt="">
                     </div>
                     <div class="news_content">
-                        <div class="board_info_news background">
+                        <div class="board_info_news background" data-aos="fade-up-left" data-aos-duration="1200">
                             <div id="news-detail-board-page">
                                 <h1>Mở tính năng Đua Xe Đạp - Đua Thuyền Rồng Lễ Hội Việt Nam</h1>
                                 <span class="">
@@ -359,10 +357,16 @@
         </div>
     </div>
 
-    <!-- Js -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="./resources/js/main.js"></script>
-    <script src="./resources/js/flickity.js"></script>
+    <!-- Flickity -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./resources/js/flickity.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({});
+    </script>
+  <!-- Js -->
+  <script src="./resources/js/main.js"></script>
     
 </body>
 </html>
