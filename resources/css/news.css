@@ -67,6 +67,9 @@
     display: none;
 }
 @media screen and (max-width: 1000px) {
+    .title_news {
+        display: none;
+    }
     .news_content{
         display: flex;
         flex-direction: column;
