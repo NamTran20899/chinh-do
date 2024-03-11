@@ -18,6 +18,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     object-fit: cover;
+    background-position: center;
 }
 .button {
     cursor: pointer;
@@ -164,10 +165,22 @@ ul {
 }
 /*-- Left Menu --*/
 .left-menu {
-    background-image: url(../img/bg-left.png);
     max-width: 20.3vw;
-    padding-bottom: 22%;
     width: 100%;
+}
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.left-menu-body {
+    background-image: url(../img/bg-leftside.png);
+}
+.left-menu .info {
+    background-image: url(../img/bg-leftside-footer.png);
+    height: 25vw;
+    position: relative;
+    top: -2px;
 }
 .left-menu img {
     width: 100%;
