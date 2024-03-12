@@ -728,27 +728,21 @@ ul {
     margin-bottom: 20vw;
 }
 #news-detail-board-page h1 {
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 1.5vw;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.4vw;
+    font-weight: 500;
     color: white;
     text-align: left;
     border-bottom: 0.5px solid wheat;
 }
-#news-detail-board-page p {
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 1.9vw;
-    color: white;
-    text-align: left;
-    margin-top: 1.5%;
-}
 #news-detail-board-page span {
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 1.4vw;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
     color: white;
     text-align: left;
+    display: flex;
+    align-items: center;
 }
 .board-banner-news{
     margin-top: 1vw;
@@ -756,9 +750,9 @@ ul {
 .board-banner-news .img1{
     width: 100%;
 }
-.board-content-news p{
-    font-family: sans-serif;
-    font-size: 1.5vw;
+.board-content-news p {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4vw;
     font-weight: 500;
     color: white;
 }
@@ -810,7 +804,7 @@ ul {
     #news-detail-board-page span {
         font-size: 1.8vw;
     }
-    .board-content-news p{
-        font-size: 2.7vw;
+    .board-content-news p {
+        font-size: 2.5vw;
     }
 }
