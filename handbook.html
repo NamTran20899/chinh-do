@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/handbook.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Font -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="./resources/img/logo-pc.png">
+    <title>Cẩm nang</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <header class="header background">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <a href="#" class="logo button">
+                    <img src="./resources/img/logo-pc.png" alt="logo-pc" />
+                </a>
+                <ul>
+                    <li>
+                        <a href="index.html">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <a href="handbook.html">Cẩm Nang</a>
+                    </li>
+                    <li>
+                        <a href="#">Sự Kiện</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Tin Tức</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar-mobile">
+                <a href="index.html" class="logo-mobile button">
+                    <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
+                </a>
+                <div class="mobile-btn">
+                    <a href="#" class="button">
+                        <img src="./resources/img/download-btn.png" alt="download-btn" />
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./resources/img/signup-btn.png" alt="signup-btn" />
+                    </a>
+                </div>
+                <a class="hamburger-btn" onclick="hamburgerBtn()">
+                    <img src="./resources/img/hamburger-btn.png" alt="hamburger-btn" />
+                </a>
+                <div class="hamburger-menu" id="hamburger">
+                    <ul>
+                        <li>
+                            <a href="#" class="">Đăng nhập/Đăng ký</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Cẩm nang</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Hướng dẫn tân thủ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Nạp thẻ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Báo lỗi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">1900 988961</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Banner -->
+            <div class="banner" data-aos="fade-right" data-aos-duration="1200">
+                <a href="" class="qr-code">
+                    <img src="./resources/img/qr-code.png" alt="qr-code" />
+                </a>
+                <div class="banner-btn">
+                    <a href="" class="button">
+                        <img src="./resources/img/banner-btn-1.png" alt="signin-signup-btn" />
+                    </a>
+                    <a href="" class="button">
+                        <img src="./resources/img/banner-btn-2.png" alt="recharge-card" />
+                    </a>
+                </div>
+                <a href="" class="block-18">
+                    <img src="./resources/img/18+.png" alt="18+" />
+                </a>
+            </div>
+            <!-- Banner-Mobile -->
+            <div class="banner-mobi-carousel">
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+                <a class="carousel-cell">
+                    <img class="" src="./resources/img/banner-mobi.png" />
+                </a>
+            </div>
+        </header>
+
+        <div class="main-container background">
+            <!-- Sidenav -->
+            <div class="side-nav background" id="Sidenav">
+                <a class="side-nav-btn" id="Sidebtn" onclick="openNav()">
+                    <img src="./resources/img/side-close.png" alt="close-open" />
+                </a>
+                <a href="" class="side-logo button">
+                    <img src="./resources/img/logo-mobi.png" alt="logo-mobi" />
+                </a>
+                <a href="" class="side-btn button">
+                    <img src="./resources/img/recharge-btn.png" alt="recharge-btn" />
+                </a>
+                <div class="side-btn-group">
+                    <a href="" class="side-btn button">
+                        <img src="./resources/img/download-btn.png" alt="download-btn" />
+                    </a>
+                    <a href="" class="side-btn button">
+                        <img src="../resources/img/signup-btn.png" alt="signup-btn" />
+                    </a>
+                    <a href="" class="side-btn button">
+                        <img src="./resources/img/fanpage-btn.png" alt="fanpage-btn" />
+                    </a>
+                    <a href="" class="side-btn button">
+                        <img src="./resources/img/community-btn.png" alt="community-btn" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main -->
+            <main class="content" id="handbook">
+                <!-- Section-1 -->
+                <div class="section-1">
+                    <!-- Left Menu -->
+                    <div class="left-menu background"  data-aos="fade-up-right" data-aos-duration="1200">
+                        <div class="left-menu-body background">
+                        <a href="" class="button">
+                            <img src="./resources/img/download.png" alt="">
+                        </a>
+                        <div class="accordion-group">
+                            <button class="accordion background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                                <p>Cẩm nang</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="panel" id="panel-handbook">
+                                <a href="handbook.html" class="text" id="handbook-text">
+                                    Cốt truyện
+                                </a>
+                                <a href="handbook-basic.html" class="text">
+                                    Thao tác cơ bản
+                                </a>
+                            </div>
+
+                            <button class="accordion background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                                <p>Hướng dẫn tân thủ</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="panel">
+                                <a href="" class="text">
+                                    Nhiệm vụ tân thủ
+                                </a>
+                                <a href="" class="text">
+                                    Bí kíp thăng cấp nhanh
+                                </a>
+                                <a href="" class="text">
+                                    Nhiệm vụ Ám sát Thái Tử
+                                </a>
+                                <a href="" class="text">
+                                    Nhiệm vụ Màn Thầu
+                                </a>
+                                <a href="" class="text">
+                                    Nhiệm vụ nuôi Boss
+                                </a>
+                                <a href="" class="text">
+                                    Nhiệm vụ Bữa cơm
+                                </a>
+                                <a href="" class="text">
+                                    Chế tạo trang bị
+                                </a>
+                                <a href="" class="text">
+                                    Nâng cấp trang bị
+                                </a>
+                            </div>
+
+                            <button class="accordion background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                                <p>Báo lỗi</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+
+                            <button class="accordion background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                                <p>Tài khoản/Bảo mật</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="0.5em"
+                                    viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="4" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="info">
+                            <h1>1900 988961</h1>
+                            <p>Thời gian: 8:30 - 22:00</p>
+                        </div>
+                    </div>
+                    <!-- Button-Group-Mobile -->
+                    <div class="btn-group-mobile">
+                        <a href="#" class="recharge-btn-mobi button">
+                            <img src="./resources/img/recharge-btn-mobi.png" alt="recharge-btn-mobi" />
+                        </a>
+                        <div class="download-btn-group">
+                            <a href="#" class="button">
+                                <img src="./resources/img/download-google-mobi.png" alt="google-play" />
+                            </a>
+                            <a href="#" class="button">
+                                <img src="./resources/img/download-apple-mobi.png" alt="apple" />
+                            </a>
+                            <a href="#" class="button">
+                                <img src="./resources/img/download-apk-mobi.png" alt="apk" />
+                            </a>
+                        </div>
+                        <a href="#" class="signin-signup-mobi button">
+                            <img src="./resources/img/signin-signup-mobi.png" alt="signin-signup-btn" />
+                        </a>
+                    </div>
+                    <!--New Content-->
+                    <div class="title_handbook">
+                        <img src="resources/img/title.png" alt="">
+                    </div>
+                    <div class="handbook_content">
+                        <div class="board_info_handbook background" data-aos="fade-up-left" data-aos-duration="1200">
+                            <div id="handbook-detail-board-page">
+                                <h1>Cốt truyện</h1>
+                                
+                                <span class="">
+                                    <a href="#">Trang chủ</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1em"
+                                            viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1l-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4" />
+                                        </svg>
+                                    <a>Cẩm nang</a>
+                                </span>
+                            </div>
+                            <div class="board-content-handbook">
+                                <br>
+                                <p>Hoàng đế băng hà, thái tử bị giết, thiên hạ đại loạn. Quan lại khắp nơi tự phong vương, nghĩa quân các lộ quất cờ khởi nghĩa, võ lâm cao thủ trùng hiện giang hồ. Đó là bối cảnh trong trò chơi nổi tiếng của Giant Interactive (Trung Quốc) sẽ được VinaGame phát hành đầu tháng 9.</p>
+                                <br>
+                                <p>Tháng tư năm thứ 7 Canh Thân Hoàng triều Thiên Hựu, hoàng đế Đức Tông Càn Xương băng hà, thái tử Đức Lân Vương được cho là bị bệnh mà chết khi mới 7 tuổi. thừa tướng Triệu Nguyên đưa hoàng đệ là Tĩnh Vương lên ngôi, chưa kịp đăng cơ, hộ quốc đại tướng quân Ân Chủy, ngoại thích của vua trước bị phế, dẫn quân công hoàng thành..</p>
+                                <br>
+                                <p>Em trai Hiếu nhân hoàng hậu Hựu Kim Ngô dẫn quân bình loạn, nhưng không may đại bại ở Chu Tước Môn, hoàng cung bị đốt cháy, Tĩnh Vương xuất binh bình loạn, binh bại ở Trác Thủy, bị bắt thân vong. Tống, Đường, Tề 3 nước xuất quân thảo Ân. Ân cùng Triệu, Ngụy liên quân, đánh bại ba nước ở Chiếu Lâm.</p>
+                                <br>
+                                <p>Từ đó, huyết mạch hoàng tộc bị tuyệt, ngọc tỷ truyền quốc không rõ tung tích, nước không có vua, thiên hạ đại loạn. Chư hầu khắp nơi khởi nghĩa, cuối cùng trở thành cục diện thập quốc phân tranh.</p>
+                                <br>
+                                <p>Ngày trước, Tiên hoàng có bói ra được một quẻ hỏa, ứng vào điềm sau này hoàng cung sẽ bị cháy, thiên hạ loạn lạc, nhưng trong quẻ có nói: "Phục hưng triều đại vẫn còn cơ hội". Thiên cơ bất khả lộ. Hoàng triều Thiên Hựu năm thứ 20, ngọc bội hoàng tộc xuất hiện ở Phụng Hoàng Thành, thiên hạ lại dấy động lên.</p>
+                                <br>
+                                <p>Hình ảnh 1</p>
+                                <br>
+                                <p>Nhân vật chính của Chinh đồ họ Long tên Trạch Thần, là con trai của tiên hoàng đã mất, vì tranh giành sự sủng ái của nhà vua nên sau khi sinh không lâu đã bị đày ra khỏi cung, sống tại Thanh Nguyên Thôn. Trên người của Long Trạch Thần khi mới sinh có một ngọc bội (vật để chứng minh thân phận hoàng tộc), do trưởng thôn bảo quản, nhưng khi Long Trạch Thần 15 tuổi, trong thôn bị nạn, thôn trưởng bất đắc dĩ phải bán ngọc bội để cứu dân làng. Do tung tích của ngọc bội đã bị tiết lộ, đại tướng Văn Quảng của tiền triều khi trước ra sức tìm kiếm Long Trạch Thần, hậu nhân của tiên hoàng, nói cho Trạch Thần biết gia thế của mình và dạy võ, mang Trạch Thần rời khỏi Thanh Nguyên Thôn.</p>
+                                <br>
+                                <p>Hình ảnh 2</p>
+                                <br>
+                                <p>Sau khi mang Trạch Thần đến Phượng Hoàng Thành, Văn Quảng ra sức truyền võ nghệ, mời gia sư về dạy cho Trạch Thần. Văn Quảng khuyến khích Trạch Thần kết giao nhiều hảo hữu trên giang hồ, để mưu đồ phục hưng Hoàng Triều. Tại đây Trạch Thần gặp được trưởng lão Thiên Long bang đã quy ẩn tên là Tang Yên, học được những chiêu võ công lợi hại hơn, đồng thời quen với cô nương tên là Lạc Anh giỏi nghề ca vũ, không ngờ Lạc Anh lại là cháu nội của đại thần tiền triều bị xử oan, rất là căm ghét tiền triều, nhưng lại là hảo hữu thâm giao với Trạch Thần. Cháu của Tang Yên là Tang Nguyên Nhi là người dẫn dắt Trạch Thần vào thế giới bang hội, cùng với La Thiếu Dương, một thiếu niên quân, có ân oán, sau này 3 người kết thành hảo hữu. Hai người giúp đỡ rất nhiều cho Trạch Thần trên bước đường hành tẩu giang hồ (đồng thời là NPC trong game).</p>
+                                <br>
+                                <p>Quận chúa của Vương Thành sợ bị sơn tặc quấy nhiễu, yêu cầu quân lính hộ tống về Vương Thành, Long Trạch Thần, Tang Nguyên Nhi, La Thiếu Dương đồng ý hộ tống quận chúa về đó. Nhưng giữa đường bị sơn tặc mai phục, dẫn đến đoàn quân thất lạc hết, may mà quận chúa cùng 3 người vẫn bình an. Khi đó, đúng lúc gặp được Lạc Anh, thì ra nàng ta không yên tâm nên đã đi theo (sau này mới biết thì ra nàng thầm yêu trộm nhớ Long Trạch Thần). 5 người về gần đến cửa Đông Vương Thành thì bị một bọn người hành thích (do bọn chúng đã biết thân phận hoàng tộc của Long Trạch Thần). Không đánh lại, 5 người đành bỏ chạy, trốn vào Bạch Cốt Động và phát hiện một chàng thanh niên,vốn là thầy tướng số tên Thận Ly, vào đây để luyện âm dương bùa chú. Dưới sự giúp đỡ của Thận Ly, 5 người vô tình phát hiện kho báu và võ công mật tịch do quân sĩ tiền triều chôn dấu. Sau cùng, họ bình an rời khỏi Bạch Cốt Động và về đến Vương Thành.</p>
+                                <br>
+                                <p>Hình ảnh 3</p>
+                                <br>
+                                <p>Hộ tống an toàn quận chúa về Vương Thành, 5 người: Long Trạch Thần, Tang Nguyên Nhi, La Thiếu Dương, Lạc Anh, Thận Ly đều được trọng thưởng, nhất là La Thiếu Dương đươc phong làm chủ tướng bảo vệ Vương Thành. Long Trạch Thần và Tang Nguyên Nhi chủ sự Thiên Long bang, cộng thêm có quan chức hai người không ngừng mở rộng tầm ảnh hưởng của bang. Sau đó, bất ngờ, Vương Thành bị quân Tống bao vây, La Thiếu Dương dẫn quân kháng cự, Long Trạch Thần điều động nhân sĩ giang hồ tham chiến, bình an bả o vệ Vương Thành, được quan phủ trọng thưởng. Lần đó do Tang Nguyên Nhi xử lý sơ suất, bị cách chức, dần dần đố kỵ Long Trạch Thần.</p>
+                                <br>
+                                <p>La Thiếu Dương cùng nước Ngụy liên hợp, phát binh đánh nước Tống, đại thắng trở về được phong đại tướng quân. Trong đó Long Trạch Thần đảm nhiệm làm sứ giả kết thân với nước Ngụy cũng được trọng thưởng. Quan phủ tham lam, phái La Thiếu Dương thừa thắng truy kích thôn tính nước Tống, mệnh trên khó cãi, đành phải xua quân công phá, nhưng nước Tống đã xin viện binh 2 nước Đường, nước Tề, La Thiếu Dương đại bại và bị bắt.</p>
+                                <br>
+                                <p>Long Trạch Thần và Lạc Anh mạo hiểm đột nhập vào nước Tống cứu thoát La Thiếu Dương, nhưng triều đình lại hoài nghi La Thiếu Dương đầu hàng nước Tống nên đã giáng chức La. Long Trạch Thần phẫn nộ, soái lĩnh quân bản bộ chiếm lấy quan phủ, tự lập làm vua, bái thượng La Thiếu Dương làm Đại tướng quân, đồng thời bái làm anh em kết nghĩa. Long Trạch Thần chỉnh đốn quốc sự, chính trị, bái Văn Quảng làm thừa tướng, quốc gia càng ngày càng hưng thịnh. Nhưng không may, trong một lần ra ngoài thành, Long Trạch Thần đã bị hành thích, trúng độc, thuốc thang vô hiệu. Lạc Anh cầu cứu sư phụ là Huyền Chân Đạo Trưởng xuống núi mới cứu sống được Long Trạch Thần. Thì ra do Tang Nguyên Nhi bất mãn Long Trạch Thần, cho là phản tặc triều đình mà phái người hành thích.</p>
+                                <br>
+                                <p>Hình ảnh 4</p>
+                                <br>
+                                <p>Long Trạch Thần vì chuyện này rất buồn, sau nhờ La Thiếu Dương và Huyền Chân Đạo Trưởng khuyên bảo, mới phấn chấn trở lại, và bái Huyền Chân Đạo Trưởng làm quốc sư. Về sau Long Trạch Thần liên minh với Triệu, Ngụy, Tần, Tề tiêu diệt 5 nước còn lại. Một rừng không thể có 2 cọp, 5 nước phản gián lẫn nhau, cuối cùng chỉ còn lại 2 nước Tần và Tề. Long Trạch Thần phải giả trang để tìm kiếm ngọc tỷ truyền quốc. Hai nước đánh nhau triền miên, quốc lực suy bại, dân chúng ca thán. Nhân đó, Long Trạch Thần dựa vào mối thâm giao với các bang hội, nhân sĩ giang hồ đã nuôi binh mại mã. Cuối cùng Long Trạch Thần kiếm được Ngọc Tỷ Truyền Quốc, thừa thế phát binh, thôn tính cả 2 nước, thống nhất giang sơn, thu về một mối.</p>
+                                <br>
+                                <p>Long Trạch Thần xây lại Hoàng Thành, kiến lập tân chính quyền, quay mặt về hướng nam xưng Đế.</p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="title" id="title-handbook">
+                            <img src="./resources/img/title_handcook.png" alt="">
+                        </div>
+                        <div class="board_info_handbook-1 background">
+                            <div id="handbooks-detail-board-page">
+                                <div class="dropdown">
+                                    <input type="checkbox" id="dropdown" />
+                                    <label for="dropdown" class="dropdown-btn">
+                                      <p>Thao tác cơ bản</p>
+                                      <span class="arrow"></span>
+                                    </label>
+                                    <ul class="dropdown-content" role="menu">
+                                      <li><a href="#">Cốt truyện</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class="board-banner-mobi">
+                                <a href="">
+                                    <img src="./resources/img/Rectangle2.png" class="img3" alt="">
+                                </a>
+                            </div>
+                            <div class="board-content-handbooks">
+                                <br>
+                                <p>Nhằm đem đến một trải nhiệm mới mẻ tới các quý nhân sỹ,
+                                    efun mở tính năng mới có tên: Thuyền Chiến Công Phá Thành”</p>
+                                <br>
+                                <p>Tính năng này sẽ đem đến cho người chơi rất nhiều điều bất
+                                    ngờ từ việc đua thuyền cho đến việc Quốc Chiến... </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-images">
+                    <a href="" class="footer-logo button">
+                        <img src="./resources/img/logo-pc.png" alt="logo-pc">
+                    </a>
+                    <img src="./resources/img/18+.png" alt="">
+                </div>
+                <div class="footer-info">
+                    <p>
+                        Phát hành bởi Efun Corp
+                        <br>Hotline: 1900 988961
+                        <br>Email: support@efun.vn
+                        <br>Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                        <br>Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông
+                        tin và Truyền thông cấp ngày 27/10/2006.
+                        <br>Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và
+                        Truyền thông cấp ngày 22/6/2015.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Js -->
+    
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./resources/js/flickity.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({}); 
+    </script>
+    <script src="./resources/js/main.js"></script>
+    <script>
+        $("html, body").animate({
+            scrollTop: $(".content").offset().top
+        }, 2000);
+  </script>
+    
+    <script src="resources/js/dropdown.js"></script>
+</body>
+</html>
