@@ -15,7 +15,6 @@
     margin: 0 0 0 auto;
     padding: 2vw 1.5vw 0 1.5vw;
     z-index: 0;
-    margin-bottom: 20vw;
     max-width: 100vw;
 }
 #handbook-detail-board-page h1 {
@@ -24,7 +23,11 @@
     font-size: 1.5vw;
     color: white;
     text-align: left;
+
+}
+#handbook-detail-board-page h2{
     border-bottom: 0.5px solid wheat;
+    margin: 0.5vw 0 0.5vw 0;
 }
 #handbook-detail-board-page p {
     font-family: sans-serif;
@@ -55,7 +58,7 @@
 .board-banner1 .img2{
     width: 45vw;
 }
-.title-news-mobi{
+#title-handbook{
     display: none;
 }
 .board_info_handbook-1{
@@ -179,5 +182,46 @@
     #title-handcook{
         width: 100%;
         padding: 1vw 8.25vw;
+    }
+    .board-content-handbooks p {
+        font-size: 2.7vw;
+    }
+}
+@media screen and (max-width: 550px) {
+    .dropdown{
+        width: 60vw;
+    }
+    #handbook-detail-board-page span {
+        font-size: 2.8vw;
+    }
+    .dropdown-content li a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .dropdown{
+        width: 60vw;
+    }
+    #handbook-detail-board-page span {
+        font-size: 2.8vw;
+    }
+    .dropdown-content li a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .dropdown{
+        width: 60vw;
+    }
+    .dropdown-content li a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 250px) {
+    .dropdown{
+        width: 60vw;
+    }
+    .dropdown-content li a{
+        font-size: 13px;
     }
 }
