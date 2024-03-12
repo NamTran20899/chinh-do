@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="resources/css/handbook.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -85,7 +86,7 @@
                 </div>
             </nav>
             <!-- Banner -->
-            <div class="banner">
+            <div class="banner" data-aos="fade-right" data-aos-duration="1200">
                 <a href="" class="qr-code">
                     <img src="./resources/img/qr-code.png" alt="qr-code" />
                 </a>
@@ -154,7 +155,8 @@
                 <!-- Section-1 -->
                 <div class="section-1">
                     <!-- Left Menu -->
-                    <div class="left-menu background">
+                    <div class="left-menu background"  data-aos="fade-up-right" data-aos-duration="1200">
+                        <div class="left-menu-body background">
                         <a href="" class="button">
                             <img src="./resources/img/download.png" alt="">
                         </a>
@@ -251,6 +253,7 @@
                                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                         </div>
+                    </div>
                         <div class="info">
                             <h1>1900 988961</h1>
                             <p>Thời gian: 8:30 - 22:00</p>
@@ -281,19 +284,17 @@
                         <img src="resources/img/title.png" alt="">
                     </div>
                     <div class="handbook_content">
-                        <div class="board_info_handbook background">
+                        <div class="board_info_handbook background" data-aos="fade-up-left" data-aos-duration="1200">
                             <div id="handbook-detail-board-page">
                                 <h1>Thao tác cơ bản</h1>
                                 <h2> </h2>
                                 <span class="">
                                     <a href="#">Trang chủ</a>
-                                    <span class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1em"
                                             viewBox="0 0 1024 1024">
                                             <path fill="currentColor"
                                                 d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1l-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4" />
                                         </svg>
-                                    </span>
                                     <a>Cẩm nang</a>
                                 </span>
                             </div>
@@ -406,8 +407,18 @@
 
     <!-- Js -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="./resources/js/main.js"></script>
     <script src="./resources/js/flickity.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({}); 
+    </script>
+    <script src="./resources/js/main.js"></script>
+    <script>
+        $("html, body").animate({
+            scrollTop: $(".content").offset().top
+        }, 2000);
+  </script>
+    <script src="resources/js/dropdown.js"></script>
     
 </body>
 </html>
