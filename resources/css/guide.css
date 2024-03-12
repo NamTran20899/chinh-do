@@ -25,7 +25,10 @@
     font-size: 1.5vw;
     color: white;
     text-align: left;
+}
+#guide-detail-board-page h2 {
     border-bottom: 0.5px solid wheat;
+    margin: 0.5vw 0 0.5vw 0;
 }
 #guide-detail-board-page p {
     font-family: sans-serif;
