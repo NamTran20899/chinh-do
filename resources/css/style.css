@@ -615,6 +615,7 @@ ul {
 }
 .title-mobi{
     position: relative;
+    display: none;
 }
 .title-mobi img{
     width: 90vw;
