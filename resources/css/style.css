@@ -200,6 +200,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
 }
 .accordion-active, .accordion:hover {
     background-image: url(../img/bg-left-btn-hover.png);
