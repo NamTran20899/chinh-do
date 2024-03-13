@@ -606,7 +606,7 @@ ul {
 }
 /*-- Board-Mobile --*/
 #title-news,
-#title-handbook,#title-handbook-basic
+#title_handbook,#title-handbook-basic
 ,#title-guide,#title-news-detail {
     display: none;
 }
@@ -615,7 +615,6 @@ ul {
 }
 .title-mobi{
     position: relative;
-    display: none;
 }
 .title-mobi img{
     width: 90vw;
@@ -627,10 +626,10 @@ ul {
     }
     .navbar-mobile,
     .btn-group-mobile, 
-    #title-news,#title-handbook
+    #title-news,#title_handbook
     ,#title-handbook-basic,#title-guide
     ,#title-news-detail {
-        display: flex;
+        display: flex ;
         justify-content: center;
     }
     .banner-mobi-carousel {
