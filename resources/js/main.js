@@ -58,14 +58,6 @@ $(".board-btn").click(function () {
   }
 });
 
-/*-- Sect-Button --*/
-$(".carousel-cell-btn").click(function () {
-  if (!$(this).hasClass("sect-active")) {
-    $(".carousel-cell-btn.sect-active").removeClass("sect-active");
-    $(this).addClass("sect-active");
-  }
-});
-
 /*-- Hamburger --*/
 function hamburgerBtn() {
   const menuWidth = document.getElementById("hamburger").style.display;

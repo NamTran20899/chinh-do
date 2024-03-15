@@ -462,10 +462,14 @@ ul {
 .sect-btn-group ul {
     display: flex;
     gap: 15px;
+    width: 100%;
 }
 .carousel-cell-btn {
     filter: brightness(50%);
     cursor: pointer;
+}
+.carousel-cell-btn:hover {
+    filter: brightness(120%);
 }
 .carousel-cell-btn img {
     width: 115px;
