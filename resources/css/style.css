@@ -6,7 +6,6 @@
     margin: 0;
 }
 body {
-    overflow-x: hidden;
     color: white;
 }
 .body-container {
@@ -46,8 +45,7 @@ ul {
 .navbar {
     display: flex;
     background-color: rgb(0, 0, 0, 0.5);
-    height: 5vw;
-    max-height: 65px;
+    height: 100px;
     padding: 0 8% 0 8%;
     border-bottom: 1.5px solid rgb(190 176 33 / 65%);
 }
@@ -66,7 +64,7 @@ ul {
     display: flex;
     align-items: center;
     font-family: "Oswald", sans-serif;
-    font-size: 2vw;
+    font-size: 35px;
     font-weight: 500;
     text-transform: uppercase;
     color: white;
@@ -85,33 +83,32 @@ ul {
     height: 100%;
     align-items: flex-end;
     z-index: 1;
+    justify-content: center;
+}
+
+.banner-btn-group {
+    display: flex;
+    flex-direction: row;
+    max-width: 1360px;
+    width: 100%;
+    position: relative;
 }
 .qr-code {
     position: absolute;
-    bottom: -3.5vw;
-    left: 0.5vw;
-}
-.qr-code img {
-    width: 50vw;
+    left: -110px;
+    bottom: -45px;
 }
 .banner-btn {
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 1vw;
-    left: 24.5vw;
-    gap: 1vw;
-}
-.banner-btn img {
-    width: 18.5vw;
+    left: 227px;
+    bottom: 36px;
 }
 .block-18 {
     position: absolute;
-    bottom: 4.5vw;
-    left: 43.5vw;
-}
-.block-18 img {
-    width: 12.25vw;
+    bottom: 70px;
+    left: 495px;
 }
 /*-- Main --*/
 .main-container {
@@ -156,29 +153,29 @@ ul {
 .content {
     display: flex;
     flex-direction: column;
+    max-width: 1360px;
+    justify-content: center;
 }
 /*-- Section-1 --*/
 .section-1 {
     display: flex;
     gap: 25px;
-    padding: 0 8.25vw;
+    justify-content: center;
 }
 /*-- Left Menu --*/
-.left-menu {
-    max-width: 20.3vw;
-    width: 100%;
-}
 .left-menu {
     display: flex;
     flex-direction: column;
     gap: 0;
+    max-width: 297px;
+    width: 100%;
 }
 .left-menu-body {
     background-image: url(../img/bg-leftside.png);
 }
 .left-menu .info {
     background-image: url(../img/bg-leftside-footer.png);
-    height: 25vw;
+    height: 275px;
     position: relative;
     top: -2px;
 }
@@ -209,7 +206,7 @@ ul {
 }
 .accordion p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.5vw;
+    font-size: 20px;
     font-weight: 500;
     margin: 0 4px;
 }  
@@ -224,7 +221,7 @@ ul {
     align-items: center;
     justify-content: center;
     font-family: "Roboto", sans-serif;
-    font-size: 1.2vw;
+    font-size: 20px;
     font-weight: 500;
     color: white;
 }
@@ -239,11 +236,11 @@ ul {
     color: #bf9160;
 }
 .info h1 {
-    font-size: 2.5vw;
+    font-size: 35px;
     font-weight: 700;
 }
 .info p {
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 500;
 }
 /*-- Board Info --*/
@@ -253,12 +250,12 @@ ul {
     margin: 0 0 0 auto;
     padding: 2vw 1.5vw 0 1.5vw;
     z-index: 0;
-    height: 55vw;
-    width: 60vw;
+    height: 832px;
+    width: 1040px;
 }
 .board-banner img {
     width: 100%;
-    height: 22vw;
+    height: 100%
 }
 .board-carousel {
     width: 100%;
@@ -280,19 +277,19 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0.75vw;
+    margin-top: 10px;
 }
 .board-btn-group li {
     background-image: url(../img/board-btn.png);
-    height: 4.5vw;
-    width: 11.5vw;
+    height: 55px;
+    width: 132px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .board-btn-group li p {
     font-family: "Oswald", sans-serif;
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: 600;
     background: -webkit-linear-gradient(#ff4800, #410b00);
     background-clip: text;
@@ -305,7 +302,6 @@ ul {
 }
 .board-content {
     width: 100%;
-    margin-top: 0.5vw;
 }
 .board-content li:hover {
     transform: translateX(1vw);
@@ -315,7 +311,7 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0.7vw 0; 
+    padding: 10px 0; 
     border-bottom: 1px solid #afafaf;
 }
 .board-content ul li a p {
@@ -324,7 +320,7 @@ ul {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-family: "Oswald", sans-serif;
-    font-size: 1.4vw;
+    font-size: 20px;
     font-weight: 500;
     color: white;
 }
@@ -364,7 +360,7 @@ ul {
     display: flex;
     box-sizing: initial;
     justify-content: flex-end;
-    margin-top: 0.75vw;
+    margin-top: 20px;
 }
 .pagination:after {
     display: table;
@@ -379,13 +375,13 @@ ul {
     margin-left: 1vw;
 }
 .pagination .pagination-pages li p {
-    width: 2vw;
-    height: 2vw;
+    width: 35px;
+    height: 35px;
     display: block;
-    line-height: 2vw;
+    line-height: 35px;
     font-family: "Oswald", sans-serif;
     font-weight: 500;
-    font-size: 1.2vw;
+    font-size: 20px;
     color: black;
     text-decoration: none;
     text-align: center;
@@ -408,8 +404,14 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2vw;
     position: relative;
+}
+.title-sect {
+    display: flex;
+    justify-content: center;
+}
+.title-sect img {
+    width: 90%;
 }
 .title {
     display: flex;
@@ -430,7 +432,8 @@ ul {
 .sect-carousel .carousel-cell-image {
     display: block;
     margin: 0 auto;
-    width: 70vw;
+    width: 1080px;
+    height: 770px;
     opacity: 0;
     -webkit-transition: opacity 1s;
     transition: opacity 1s;
@@ -442,17 +445,18 @@ ul {
 .bg-sect {
     position: absolute;
     z-index: 0;
-    top: 20vw;
+    top: 310px;
 }
 .bg-sect img {
-    width: 90vw;
+    width: 1087px;
+    height: 345px;
     margin: 0 9vw 0 9vw;
 }
 .sect-btn-group {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 8vw;
+    bottom: 110px;
     z-index: 1;
 }
 .sect-btn-group ul {
@@ -464,7 +468,7 @@ ul {
     cursor: pointer;
 }
 .carousel-cell-btn img {
-    width: 7vw;
+    width: 115px;
 }
 .sect-active {
     filter: brightness(120%);
@@ -620,6 +624,100 @@ ul {
     width: 90vw;
 }
 /*-- Index-Responsive --*/
+@media screen and (max-width: 1360px) {
+    .navbar {
+        height: 5vw;
+        max-height: 65px;
+    }
+    .navbar ul li a {
+        font-size: 2vw;
+        padding: 0 1vw;
+    }
+    .left-menu {
+        max-width: 20.3vw;
+    }
+    .left-menu .info {
+        height: 25vw;
+    }
+    .accordion p {
+        font-size: 1.5vw;
+    } 
+    .panel a {
+        font-size: 1.5vw;
+    }
+    .info h1 {
+        font-size: 2.5vw;
+    }
+    .info p {
+        font-size: 1.5vw;
+    }
+    .board-info {
+        width: 60VW;
+        height: 55vw;
+        padding: 1.6vw 1.6vw 0 1.6vw;
+        margin: 0;
+    }
+    .board-banner img {
+        height: 22vw;
+    }
+    .board-btn-group li {
+        height: 4.5vw;
+        width: 11.5vw;
+    }
+    .board-btn-group li p {
+        font-size: 1.5vw;
+    }
+    .board-content ul li a p {
+        font-size: 1.4vw;
+    }
+    .pagination {
+        margin-top: 0.75vw;
+    }
+    .pagination .pagination-pages li p {
+        width: 2vw;
+        height: 2vw;
+        line-height: 2vw;
+        font-size: 1.2vw;
+    }
+    .board-content ul li a  {
+        padding: 0.7vw 0;
+    }
+    .qr-code img {
+        width: 50vw;
+    }
+    .banner-btn img {
+        width: 18.5vw;
+    }
+    .block-18 img {
+        width: 12.25vw;
+    }
+    .qr-code {
+        bottom: -3.5vw;
+        left: 0.5vw;
+    }
+    .banner-btn {
+        bottom: 2.25vw;
+        left: 24.75vw;
+    }
+    .block-18 {
+        bottom: 4.79vw;
+        left: 43.75vw;
+    }
+    .sect-carousel .carousel-cell-image {
+        width: 70vw;
+        height: 100%;
+    }
+    .bg-sect img {
+        width: 90vw;
+        margin: 0 9vw 0 9vw;
+    }
+    .bg-sect {
+        top: 22vw;
+    }
+    .sect-btn-group {
+        bottom: 5vw;
+    }
+}
 @media screen and (max-width: 1000px) {
     .banner, .side-nav, .navbar, .left-menu {
         display: none;
@@ -634,6 +732,9 @@ ul {
     }
     .banner-mobi-carousel {
         display: block;
+    }
+    .board-banner img {
+        height: 47vw;
     }
     .header {
         all: unset;
@@ -650,9 +751,6 @@ ul {
         width: 100%;
         padding: 2vw 4.25vw 0 1.5vw;
     }
-    .board-banner img {
-        height: 47vw;
-    }
     .board-btn-group li {
         width: 16vw;
         height: 6vw;
@@ -662,6 +760,7 @@ ul {
     }
     .board-content ul li a p {
         font-size: 4vw;
+        max-width: 70vw;
     }
     .pagination .pagination-pages li p {
         width: 4vw;
