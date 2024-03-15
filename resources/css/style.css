@@ -652,7 +652,7 @@ ul {
         font-size: 1.5vw;
     }
     .board-info {
-        width: 60VW;
+        width: 60vw;
         height: 55vw;
         padding: 1.6vw 1.6vw 0 1.6vw;
         margin: 0;
@@ -795,6 +795,16 @@ ul {
     .carousel-cell-btn img {
         width: 10vw;
     }
+    .news-board-info {
+        width: 100vw !important;
+    }
+    .news-board-info .board-btn-group li {
+        width: 20vw;
+        height: 8vw;
+    }
+    .news-board-info .board-btn-group li p {
+        font-size: 3vw;
+    }
 }
 @media screen and (max-width: 550px) {
     .recharge-btn-mobi img {
@@ -825,6 +835,16 @@ ul {
 }
 
 /*-- News.html --*/
+.news-board-info {
+    background: linear-gradient(180deg, rgba(15, 13, 17, 1) 0%, rgba(50, 41, 46, 1) 50%, rgba(15, 13, 17, 1) 100%);
+    border: 2px solid #9A824B;
+    width: 60vw;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0;
+}
+
 .title {
     position: absolute;
     top: 36vw;
