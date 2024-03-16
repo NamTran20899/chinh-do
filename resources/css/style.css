@@ -896,19 +896,21 @@ ul {
     padding: 2vw 1.5vw 0 1.5vw;
     z-index: 0;
     width: 1024px;
+    height: 1880px;
 }
 #news-detail-board-page h1 {
     font-family: "Oswald", sans-serif;
-    font-size: 2.5vw;
+    font-size: 38px;
     font-weight: 500;
     color: white;
     text-align: left;
     border-bottom: 0.5px solid wheat;
+    margin-top: -1vw;
 }
 #news-detail-board-page span {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
-    font-size: 1.2vw;
+    font-size: 30px;
     color: white;
     text-align: left;
     display: flex;
@@ -922,7 +924,7 @@ ul {
 }
 .board-content-news p {
     font-family: "Oswald", sans-serif;
-    font-size: 1.75vw;
+    font-size: 25px;
     font-weight: 400;
     color: white;
 }
@@ -931,9 +933,9 @@ ul {
     display: flex;
     justify-content: center;
 }
-.board-banner1 .img2{
+/* .board-banner1 .img2{
     width: 45vw;
-}
+} */
 
 .board_info_news1{
     display: none;
@@ -993,7 +995,14 @@ ul {
     flex-direction: column;
     padding: 2vw 1.5vw 0 1.5vw;
     width: 1024px;
-    height: 3060px; 
+    height: 3150px; 
+}
+.board_info_handbook1 {
+    background-image: url(../img/border_news.png);
+    flex-direction: column;
+    padding: 2vw 1.5vw 0 1.5vw;
+    width: 1024px;
+    height: 2450px; 
 }
 .board_info_guide{
     background-image: url(../img/border_news.png);
@@ -1006,17 +1015,18 @@ ul {
 ,#handbook-detail-board-page h1 {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
-    font-size: 2.75vw;
+    font-size: 45px;
     color: white;
     text-align: left;
     border-bottom: 1px solid white;
     padding-bottom: 2px;
+    margin-top: -1vw;
 }
 #guide-detail-board-page span,
 #handbook-detail-board-page span{
     font-family: "Oswald", sans-serif;
     font-weight: 300;
-    font-size: 1.25vw;
+    font-size: 26px;
     color: white;
     text-align: left;
     display: flex;
@@ -1026,7 +1036,7 @@ ul {
 .board-content-guide p,
 .board-content-handbook p   {
     font-family: "Oswald", sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 400;
     color: white;
 }
@@ -1036,21 +1046,50 @@ ul {
     justify-content: center;
 }
 .board-banner1 .img2{
-    width: 45vw;
+    width: 650px;
 }
 .board_info_guide-1,
 .board_info_handbook-1 {
     display: none;
 }
 @media screen and (max-width:1360px) {
-    .board_info_guide,.board_info_handbook,
-    .news-board-info,.board_info_news{
+    .board_info_guide,.board_info_handbook
+    {
         width: 60vw;
-        height: 230vw;
+        height: 246vw;
+    }
+    .news-board-info{
+        width: 60vw;
+        height: 75vw;
     }
     .board-content-guide p,
     .board-content-handbook p {
+        font-size: 1.7vw;
+    }
+    .board-banner1 .img2{
+        width: 45vw;
+    }
+    .board-content-news p {
+        font-size: 2.2vw;
+    } 
+    .board_info_news {
+        width: 60vw;
+        height: 167vw;
+    }
+    #news-detail-board-page h1 {
+        font-size: 2.2vw;
+    }
+    #handbook-detail-board-page h1,#guide-detail-board-page h1{
+        font-size: 2.8vw;
+    }
+    #handbook-detail-board-page span,
+    #guide-detail-board-page span,
+    #news-detail-board-page span{
         font-size: 1.6vw;
+    }
+    .board_info_handbook1{
+        width: 60vw;
+        height: 164vw;
     }
 }
 /* Dropdown */
@@ -1130,7 +1169,7 @@ input[type="checkbox"]:focus + label {
         align-items: center;
     }
     .board_info_guide,
-    .board_info_handbook {
+    .board_info_handbook,.board_info_handbook1 {
         display: none;
     }
     .board_info_guide-1,
@@ -1160,7 +1199,7 @@ input[type="checkbox"]:focus + label {
     
     .board-content-guide p,
     .board-content-handbook p {
-        font-size: 2.7vw;
+        font-size: 2.5vw;
     }
     #title-handcook{
         width: 100%;
