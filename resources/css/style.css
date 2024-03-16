@@ -48,6 +48,11 @@ ul {
     height: 100px;
     padding: 0 8% 0 8%;
     border-bottom: 1.5px solid rgb(190 176 33 / 65%);
+    justify-content: center;
+}
+.navbar-group {
+    max-width: 1360px;
+    display: flex;
 }
 .navbar .logo {
     width: 15%;
@@ -118,6 +123,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-repeat: repeat-y !important;
 }
 /*-- Side Nav --*/
 .side-nav {
@@ -353,7 +359,7 @@ ul {
 .guides-list {
     position: relative;
     animation-name: example;
-    animation-duration: 2s;  
+    animation-duration: 0.75s;  
     animation-fill-mode: forwards;
 }
 .pagination {
@@ -418,8 +424,7 @@ ul {
     justify-content: center;
 }
 .title img {
-    width: 100%;
-    padding: 0 8.25vw;
+    width: 500px;
 }
 .sect-carousel {
     width: 100%;
@@ -491,16 +496,16 @@ ul {
 }
 .footer-images img {
     max-height: 117px;
-    width: 12vw;
+    width: 8vw;
 }
 .footer-logo img {
-    width: 20vw;
+    width: 12vw;
     max-height: none !important;
 }
 .footer-info {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2vw;
+    font-size: 23px;
     font-weight: 500;
     color: white;
     line-height: 1.2;
@@ -628,6 +633,11 @@ ul {
     width: 90vw;
 }
 /*-- Index-Responsive --*/
+@media screen and (max-width: 2110px) {
+    .title {
+        top: 37vw !important;
+    }
+}
 @media screen and (max-width: 1440px) {
     .navbar {
         height: 80px;
@@ -635,8 +645,18 @@ ul {
     .navbar ul li a {
         font-size: 30px;
     }
+    .title {
+        top: 35.5vw !important;
+    }
+    .title img {
+        width: 30vw !important;
+    }
 }
 @media screen and (max-width: 1360px) {
+    .title {
+        right: 32vw !important;
+        width: 10% !important;
+    }
     .navbar {
         height: 5vw;
         max-height: 65px;
@@ -728,6 +748,9 @@ ul {
     }
     .sect-btn-group {
         bottom: 5vw;
+    }
+    .footer-info {
+        font-size: 1.2vw;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -859,11 +882,9 @@ ul {
 
 .title {
     position: absolute;
-    top: 36vw;
-    right: 16vw;
-}
-.title img {
-    width: 45vw;
+    top: 37.5vw;
+    right: 0vw;
+    width: 90%;
 }
 #tittle-news{
     display: none;
