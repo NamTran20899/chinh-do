@@ -167,6 +167,8 @@ ul {
     display: flex;
     gap: 25px;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 /*-- Left Menu --*/
 .left-menu {
@@ -794,7 +796,7 @@ ul {
         font-size: 2vw;
     }
     .board-content ul li a p {
-        font-size: 4vw;
+        font-size: 2.75vw;
         max-width: 70vw;
     }
     .pagination .pagination-pages li p {
@@ -831,7 +833,8 @@ ul {
         width: 10vw;
     }
     .news-board-info {
-        width: 100vw !important;
+        width: 95vw !important;
+        margin-right: 2.25vw !important;
     }
     .news-board-info .board-btn-group li {
         width: 20vw;
