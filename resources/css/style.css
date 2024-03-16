@@ -628,6 +628,14 @@ ul {
     width: 90vw;
 }
 /*-- Index-Responsive --*/
+@media screen and (max-width: 1440px) {
+    .navbar {
+        height: 80px;
+    }
+    .navbar ul li a {
+        font-size: 30px;
+    }
+}
 @media screen and (max-width: 1360px) {
     .navbar {
         height: 5vw;
