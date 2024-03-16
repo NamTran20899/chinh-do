@@ -896,7 +896,7 @@ ul {
     padding: 2vw 1.5vw 0 1.5vw;
     z-index: 0;
     width: 1024px;
-    height: 1880px;
+    height: 100%;
 }
 #news-detail-board-page h1 {
     font-family: "Oswald", sans-serif;
@@ -995,21 +995,21 @@ ul {
     flex-direction: column;
     padding: 2vw 1.5vw 0 1.5vw;
     width: 1024px;
-    height: 3150px; 
+    height: 100% 
 }
 .board_info_handbook1 {
     background-image: url(../img/border_news.png);
     flex-direction: column;
     padding: 2vw 1.5vw 0 1.5vw;
     width: 1024px;
-    height: 2450px; 
+    height: 100%
 }
 .board_info_guide{
     background-image: url(../img/border_news.png);
     flex-direction: column;
     padding: 2vw 1.5vw 0 1.5vw;
     width: 1024px;
-    height: 1381px;
+    height: 100%;
 }
 #guide-detail-board-page h1
 ,#handbook-detail-board-page h1 {
@@ -1053,14 +1053,11 @@ ul {
     display: none;
 }
 @media screen and (max-width:1360px) {
-    .board_info_guide,.board_info_handbook
+    .board_info_guide,.board_info_handbook,
+    .news-board-info,.board_info_news,.board_info_handbook1
     {
         width: 60vw;
-        height: 246vw;
-    }
-    .news-board-info{
-        width: 60vw;
-        height: 75vw;
+        height: 100%;
     }
     .board-content-guide p,
     .board-content-handbook p {
@@ -1070,14 +1067,10 @@ ul {
         width: 45vw;
     }
     .board-content-news p {
-        font-size: 2.2vw;
+        font-size: 2.5vw;
     } 
-    .board_info_news {
-        width: 60vw;
-        height: 167vw;
-    }
     #news-detail-board-page h1 {
-        font-size: 2.2vw;
+        font-size: 2.5vw;
     }
     #handbook-detail-board-page h1,#guide-detail-board-page h1{
         font-size: 2.8vw;
@@ -1087,10 +1080,7 @@ ul {
     #news-detail-board-page span{
         font-size: 1.6vw;
     }
-    .board_info_handbook1{
-        width: 60vw;
-        height: 164vw;
-    }
+    
 }
 /* Dropdown */
 .dropdown {
