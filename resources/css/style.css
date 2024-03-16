@@ -445,7 +445,7 @@ ul {
 .bg-sect {
     position: absolute;
     z-index: 0;
-    top: 310px;
+    top: 285px;
 }
 .bg-sect img {
     width: 1087px;
@@ -796,7 +796,7 @@ ul {
         width: 90vw;
     }
     .bg-sect {
-        top: 25vw;
+        top: 26vw;
     }
     .bg-sect img {
         height: 33vw;
