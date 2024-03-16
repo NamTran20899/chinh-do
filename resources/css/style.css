@@ -972,7 +972,7 @@ ul {
     flex-direction: column;
     padding: 2vw 1.5vw 0 1.5vw;
     width: 1024px;
-    height: 3596px; 
+    height: 3060px; 
 }
 .board_info_guide{
     background-image: url(../img/border_news.png);
@@ -1005,7 +1005,7 @@ ul {
 .board-content-guide p,
 .board-content-handbook p   {
     font-family: "Oswald", sans-serif;
-    font-size: 1.75vw;
+    font-size: 24px;
     font-weight: 400;
     color: white;
 }
@@ -1025,6 +1025,11 @@ ul {
     .board_info_guide,.board_info_handbook,
     .news-board-info,.board_info_news{
         width: 60vw;
+        height: 230vw;
+    }
+    .board-content-guide p,
+    .board-content-handbook p {
+        font-size: 1.6vw;
     }
 }
 /* Dropdown */
