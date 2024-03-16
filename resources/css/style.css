@@ -309,7 +309,7 @@ ul {
 .board-content {
     width: 100%;
 }
-.board-content li:hover {
+.board-content .board-list-content li:hover {
     transform: translateX(1vw);
     transition: all .3s;
 }
@@ -852,10 +852,19 @@ ul {
     .board-info {
         padding: 2vw 5.25vw 0 1.5vw;
     }
+    .footer-info {
+        margin-top: 1.5vw;
+    }
 }
 @media screen and (max-width: 450px) {
     .signin-signup-mobi img {
         height: 30.25vw;
+    }
+    .board-info {
+        height: 112vw;
+    }
+    .footer-info {
+        margin-top: 2vw;
     }
 }
 @media screen and (max-width: 350px) {

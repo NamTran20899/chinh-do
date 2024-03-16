@@ -2,7 +2,7 @@
 $(".board-carousel").flickity({
   cellAlign: "center",
   prevNextButtons: false,
-  draggable: false,
+  draggable: true,
   pageDots: true,
   wrapAround: true,
   autoPlay: 2500,
@@ -43,7 +43,7 @@ $carousel.on("select.flickity", function () {
 $(".banner-mobi-carousel").flickity({
   cellAlign: "center",
   prevNextButtons: false,
-  draggable: false,
+  draggable: true,
   pageDots: true,
   wrapAround: true,
   autoPlay: 2500,
